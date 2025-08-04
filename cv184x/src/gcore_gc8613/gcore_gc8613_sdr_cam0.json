@@ -2873,6 +2873,54 @@
                     ]
                 },
                 {
+                    "ALIAS": "ISP_AE_BOOT_FAST_CONVERGE_S",
+                    "COMMENT": "Defines ISP_AE_BOOT_FAST_CONVERGE_S",
+                    "ID": "ISP_AE_BOOT_FAST_CONVERGE_S",
+                    "MEMBER": [
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Enable",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "bEnable",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "FirstFrLuma",
+                            "COMMENT": "",
+                            "COUNT": 5,
+                            "FORMAT": "",
+                            "ID": "firstFrLuma",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                -32768,
+                                32767
+                            ],
+                            "TYPE": "CVI_S16"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "TargetBv",
+                            "COMMENT": "",
+                            "COUNT": 5,
+                            "FORMAT": "",
+                            "ID": "targetBv",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                -32768,
+                                32767
+                            ],
+                            "TYPE": "CVI_S16"
+                        }
+                    ]
+                },
+                {
                     "ALIAS": "ISP_DCIRIS_ATTR_S",
                     "COMMENT": "Defines ISP_DCIRIS_ATTR_S",
                     "ID": "ISP_DCIRIS_ATTR_S",
@@ -19643,58 +19691,6 @@
                     "MEMBER": [
                         {
                             "ACCESS": "RW",
-                            "ALIAS": "SigmaNlm",
-                            "COMMENT": "",
-                            "FORMAT": "",
-                            "ID": "SigmaNlm",
-                            "LEVEL": 1,
-                            "RANGE": [
-                                0,
-                                511
-                            ],
-                            "TYPE": "CVI_U16"
-                        },
-                        {
-                            "ACCESS": "RW",
-                            "ALIAS": "AlphaNlm",
-                            "COMMENT": "",
-                            "FORMAT": "",
-                            "ID": "AlphaNlm",
-                            "LEVEL": 1,
-                            "RANGE": [
-                                0,
-                                1033
-                            ],
-                            "TYPE": "CVI_U16"
-                        },
-                        {
-                            "ACCESS": "RW",
-                            "ALIAS": "SigmaBf",
-                            "COMMENT": "",
-                            "FORMAT": "",
-                            "ID": "SigmaBf",
-                            "LEVEL": 1,
-                            "RANGE": [
-                                0,
-                                511
-                            ],
-                            "TYPE": "CVI_U16"
-                        },
-                        {
-                            "ACCESS": "RW",
-                            "ALIAS": "AlphaBf",
-                            "COMMENT": "",
-                            "FORMAT": "",
-                            "ID": "AlphaBf",
-                            "LEVEL": 1,
-                            "RANGE": [
-                                0,
-                                1033
-                            ],
-                            "TYPE": "CVI_U16"
-                        },
-                        {
-                            "ACCESS": "RW",
                             "ALIAS": "Filter1GaussianCurve",
                             "COMMENT": "",
                             "COUNT": 6,
@@ -19756,134 +19752,6 @@
                     "COMMENT": "Defines ISP_BNR_FILTER_AUTO_ATTR_S",
                     "ID": "ISP_BNR_FILTER_AUTO_ATTR_S",
                     "MEMBER": [
-                        {
-                            "ACCESS": "RW",
-                            "ALIAS": "SigmaNlm",
-                            "COMMENT": "",
-                            "COUNT": 16,
-                            "FORMAT": "",
-                            "ID": "SigmaNlm",
-                            "LEVEL": 1,
-                            "RANGE": [
-                                0,
-                                511
-                            ],
-                            "TITLE_H": [
-                                "ISO100",
-                                "ISO200",
-                                "ISO400",
-                                "ISO800",
-                                "ISO1600",
-                                "ISO3200",
-                                "ISO6400",
-                                "ISO12800",
-                                "ISO25600",
-                                "ISO51200",
-                                "ISO102400",
-                                "ISO204800",
-                                "ISO409600",
-                                "ISO819200",
-                                "ISO1638400",
-                                "ISO3276800"
-                            ],
-                            "TYPE": "CVI_U16"
-                        },
-                        {
-                            "ACCESS": "RW",
-                            "ALIAS": "AlphaNlm",
-                            "COMMENT": "",
-                            "COUNT": 16,
-                            "FORMAT": "",
-                            "ID": "AlphaNlm",
-                            "LEVEL": 1,
-                            "RANGE": [
-                                0,
-                                1033
-                            ],
-                            "TITLE_H": [
-                                "ISO100",
-                                "ISO200",
-                                "ISO400",
-                                "ISO800",
-                                "ISO1600",
-                                "ISO3200",
-                                "ISO6400",
-                                "ISO12800",
-                                "ISO25600",
-                                "ISO51200",
-                                "ISO102400",
-                                "ISO204800",
-                                "ISO409600",
-                                "ISO819200",
-                                "ISO1638400",
-                                "ISO3276800"
-                            ],
-                            "TYPE": "CVI_U16"
-                        },
-                        {
-                            "ACCESS": "RW",
-                            "ALIAS": "SigmaBf",
-                            "COMMENT": "",
-                            "COUNT": 16,
-                            "FORMAT": "",
-                            "ID": "SigmaBf",
-                            "LEVEL": 1,
-                            "RANGE": [
-                                0,
-                                511
-                            ],
-                            "TITLE_H": [
-                                "ISO100",
-                                "ISO200",
-                                "ISO400",
-                                "ISO800",
-                                "ISO1600",
-                                "ISO3200",
-                                "ISO6400",
-                                "ISO12800",
-                                "ISO25600",
-                                "ISO51200",
-                                "ISO102400",
-                                "ISO204800",
-                                "ISO409600",
-                                "ISO819200",
-                                "ISO1638400",
-                                "ISO3276800"
-                            ],
-                            "TYPE": "CVI_U16"
-                        },
-                        {
-                            "ACCESS": "RW",
-                            "ALIAS": "AlphaBf",
-                            "COMMENT": "",
-                            "COUNT": 16,
-                            "FORMAT": "",
-                            "ID": "AlphaBf",
-                            "LEVEL": 1,
-                            "RANGE": [
-                                0,
-                                1033
-                            ],
-                            "TITLE_H": [
-                                "ISO100",
-                                "ISO200",
-                                "ISO400",
-                                "ISO800",
-                                "ISO1600",
-                                "ISO3200",
-                                "ISO6400",
-                                "ISO12800",
-                                "ISO25600",
-                                "ISO51200",
-                                "ISO102400",
-                                "ISO204800",
-                                "ISO409600",
-                                "ISO819200",
-                                "ISO1638400",
-                                "ISO3276800"
-                            ],
-                            "TYPE": "CVI_U16"
-                        },
                         {
                             "ACCESS": "RW",
                             "ALIAS": "Filter1GaussianCurve",
@@ -20043,19 +19911,6 @@
                                 3
                             ],
                             "TYPE": "CVI_U8"
-                        },
-                        {
-                            "ACCESS": "RW",
-                            "ALIAS": "AutoLutEn",
-                            "COMMENT": "",
-                            "FORMAT": "",
-                            "ID": "AutoLutEn",
-                            "LEVEL": 1,
-                            "RANGE": [
-                                0,
-                                1
-                            ],
-                            "TYPE": "CVI_BOOL"
                         },
                         {
                             "ACCESS": "RW",
@@ -28607,6 +28462,91 @@
                     ]
                 },
                 {
+                    "ALIAS": "ISP_AF_ZONE_FOCUS_ATTR_S",
+                    "COMMENT": "Defines ISP_AF_ZONE_FOCUS_ATTR_S",
+                    "ID": "ISP_AF_ZONE_FOCUS_ATTR_S",
+                    "MEMBER": [
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Enable",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "enable",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "ZoneWeight",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u8ZoneWeight",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                255
+                            ],
+                            "TYPE": "CVI_U8"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "ZoneX",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u32ZoneX",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "ZoneY",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u32ZoneY",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "ZoneWidth",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u32ZoneWidth",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "ZoneHeight",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u32ZoneHeight",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        }
+                    ]
+                },
+                {
                     "ALIAS": "ISP_AE_STITCH_STATISTICS_S",
                     "COMMENT": "Defines ISP_AE_STITCH_STATISTICS_S",
                     "ID": "ISP_AE_STITCH_STATISTICS_S",
@@ -31348,9 +31288,9 @@
         "CODE_NAME": "cv184x",
         "COMM_PROTOCOL": "1.0",
         "FULL_NAME": "cv184x",
-        "GENERATOR_VERSION": "(I6a0a97,d9f70a82)",
+        "GENERATOR_VERSION": "(I6c16c0,78e840d)",
         "ISP_BRANCH": "master",
-        "ISP_VERSION": "(I6a0a97,d9f70a82)",
+        "ISP_VERSION": "(I6c16c0,78e840d)",
         "PARAMETERS": {
             "PARAM": [
                 {
@@ -31368,7 +31308,7 @@
                 }
             ]
         },
-        "SDK_VERSION": "20250710"
+        "SDK_VERSION": "20250730"
     },
     "FUNCTIONS": {
         "FUNCTION": [
@@ -32401,26 +32341,78 @@
                             "TITLE": "BNR"
                         },
                         {
+                            "CURVEMETHOD": [
+                                {
+                                    "ALIAS": "Filter1GaussianCurve",
+                                    "METHOD": "gaussian_curve",
+                                    "POINTS": [
+                                        "ISP_BNR_FILTER_ATTR_S.stManual.Filter1GaussianCurve"
+                                    ]
+                                },
+                                {
+                                    "ALIAS": "Filter1LumaOffset",
+                                    "METHOD": "sqrt_curve",
+                                    "POINTS": [
+                                        "ISP_BNR_FILTER_ATTR_S.stManual.Filter1LumaOffset"
+                                    ]
+                                },
+                                {
+                                    "ALIAS": "Filter1GaussianCurve",
+                                    "METHOD": "gaussian_curve",
+                                    "POINTS": [
+                                        "ISP_BNR_FILTER_ATTR_S.stAuto.Filter1GaussianCurve"
+                                    ]
+                                },
+                                {
+                                    "ALIAS": "Filter1LumaOffset",
+                                    "METHOD": "sqrt_curve",
+                                    "POINTS": [
+                                        "ISP_BNR_FILTER_ATTR_S.stAuto.Filter1LumaOffset"
+                                    ]
+                                }
+                            ],
                             "MEMBER": [
-                                "ISP_BNR_FILTER_ATTR_S.stManual.SigmaNlm",
-                                "ISP_BNR_FILTER_ATTR_S.stManual.AlphaNlm",
                                 "ISP_BNR_FILTER_ATTR_S.stManual.Filter1GaussianCurve",
                                 "ISP_BNR_FILTER_ATTR_S.stManual.Filter1LumaOffset",
-                                "ISP_BNR_FILTER_ATTR_S.stAuto.SigmaNlm",
-                                "ISP_BNR_FILTER_ATTR_S.stAuto.AlphaNlm",
                                 "ISP_BNR_FILTER_ATTR_S.stAuto.Filter1GaussianCurve",
                                 "ISP_BNR_FILTER_ATTR_S.stAuto.Filter1LumaOffset"
                             ],
                             "TITLE": "Filter NLM"
                         },
                         {
+                            "CURVEMETHOD": [
+                                {
+                                    "ALIAS": "Filter2GaussianCurve",
+                                    "METHOD": "gaussian_curve",
+                                    "POINTS": [
+                                        "ISP_BNR_FILTER_ATTR_S.stManual.Filter2GaussianCurve"
+                                    ]
+                                },
+                                {
+                                    "ALIAS": "Filter2LumaOffset",
+                                    "METHOD": "sqrt_curve",
+                                    "POINTS": [
+                                        "ISP_BNR_FILTER_ATTR_S.stManual.Filter2LumaOffset"
+                                    ]
+                                },
+                                {
+                                    "ALIAS": "Filter2GaussianCurve",
+                                    "METHOD": "gaussian_curve",
+                                    "POINTS": [
+                                        "ISP_BNR_FILTER_ATTR_S.stAuto.Filter2GaussianCurve"
+                                    ]
+                                },
+                                {
+                                    "ALIAS": "Filter2LumaOffset",
+                                    "METHOD": "sqrt_curve",
+                                    "POINTS": [
+                                        "ISP_BNR_FILTER_ATTR_S.stAuto.Filter2LumaOffset"
+                                    ]
+                                }
+                            ],
                             "MEMBER": [
-                                "ISP_BNR_FILTER_ATTR_S.stManual.SigmaBf",
-                                "ISP_BNR_FILTER_ATTR_S.stManual.AlphaBf",
                                 "ISP_BNR_FILTER_ATTR_S.stManual.Filter2GaussianCurve",
                                 "ISP_BNR_FILTER_ATTR_S.stManual.Filter2LumaOffset",
-                                "ISP_BNR_FILTER_ATTR_S.stAuto.SigmaBf",
-                                "ISP_BNR_FILTER_ATTR_S.stAuto.AlphaBf",
                                 "ISP_BNR_FILTER_ATTR_S.stAuto.Filter2GaussianCurve",
                                 "ISP_BNR_FILTER_ATTR_S.stAuto.Filter2LumaOffset"
                             ],
@@ -37296,54 +37288,8 @@
                     "VALUE": 16
                 },
                 {
-                    "PATH": "ISP_BNR_FILTER_ATTR_S.AutoLutEn",
-                    "VALUE": 0
-                },
-                {
                     "PATH": "ISP_BNR_FILTER_ATTR_S.DebugMode",
                     "VALUE": 0
-                },
-                {
-                    "PATH": "ISP_BNR_FILTER_ATTR_S.stAuto.AlphaBf",
-                    "VALUE": [
-                        5,
-                        5,
-                        5,
-                        5,
-                        5,
-                        5,
-                        5,
-                        5,
-                        5,
-                        5,
-                        5,
-                        5,
-                        5,
-                        5,
-                        5,
-                        5
-                    ]
-                },
-                {
-                    "PATH": "ISP_BNR_FILTER_ATTR_S.stAuto.AlphaNlm",
-                    "VALUE": [
-                        5,
-                        5,
-                        5,
-                        5,
-                        5,
-                        5,
-                        5,
-                        5,
-                        5,
-                        5,
-                        5,
-                        5,
-                        5,
-                        5,
-                        5,
-                        5
-                    ]
                 },
                 {
                     "PATH": "ISP_BNR_FILTER_ATTR_S.stAuto.Filter1GaussianCurve",
@@ -38102,56 +38048,6 @@
                     ]
                 },
                 {
-                    "PATH": "ISP_BNR_FILTER_ATTR_S.stAuto.SigmaBf",
-                    "VALUE": [
-                        10,
-                        10,
-                        10,
-                        10,
-                        10,
-                        10,
-                        10,
-                        10,
-                        10,
-                        10,
-                        10,
-                        10,
-                        10,
-                        10,
-                        10,
-                        10
-                    ]
-                },
-                {
-                    "PATH": "ISP_BNR_FILTER_ATTR_S.stAuto.SigmaNlm",
-                    "VALUE": [
-                        10,
-                        10,
-                        10,
-                        10,
-                        10,
-                        10,
-                        10,
-                        10,
-                        10,
-                        10,
-                        10,
-                        10,
-                        10,
-                        10,
-                        10,
-                        10
-                    ]
-                },
-                {
-                    "PATH": "ISP_BNR_FILTER_ATTR_S.stManual.AlphaBf",
-                    "VALUE": 5
-                },
-                {
-                    "PATH": "ISP_BNR_FILTER_ATTR_S.stManual.AlphaNlm",
-                    "VALUE": 5
-                },
-                {
                     "PATH": "ISP_BNR_FILTER_ATTR_S.stManual.Filter1GaussianCurve",
                     "VALUE": [
                         0,
@@ -38216,14 +38112,6 @@
                         9,
                         9
                     ]
-                },
-                {
-                    "PATH": "ISP_BNR_FILTER_ATTR_S.stManual.SigmaBf",
-                    "VALUE": 10
-                },
-                {
-                    "PATH": "ISP_BNR_FILTER_ATTR_S.stManual.SigmaNlm",
-                    "VALUE": 10
                 }
             ]
         },
@@ -64262,12 +64150,6 @@
                 {
                     "PATH": "ISP_EXPOSURE_ATTR_S.stAuto.au32Reserve",
                     "VALUE": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
                         0,
                         0,
                         0,
