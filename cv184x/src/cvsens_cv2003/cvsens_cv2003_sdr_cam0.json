@@ -1379,6 +1379,331 @@
                                 3
                             ],
                             "TYPE": "CVI_U8"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Mlsc",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Mlsc",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Fusion",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Fusion",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "MapCurve",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "MapCurve",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Dpc",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Dpc",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "CrossTalk",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "CrossTalk",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Bnr",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Bnr",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Blc",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Blc",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Rlsc",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Rlsc",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Drc",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Drc",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Demosaic",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Demosaic",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Pfr",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Pfr",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Ccm",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Ccm",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Gamma",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Gamma",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Clut",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Clut",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Csc",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Csc",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Ldci",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Ldci",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Dci",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Dci",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "PreSharpen",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "PreSharpen",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Tnr",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Tnr",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Cnr",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Cnr",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Sharpen",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Sharpen",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Ca",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Ca",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Ca2",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Ca2",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "YContrast",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "YContrast",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Mono",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Mono",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
                         }
                     ]
                 },
@@ -23239,6 +23564,20 @@
                                 3
                             ],
                             "TYPE": "CVI_U8"
+                        },
+                        {
+                            "ACCESS": "Rw",
+                            "ALIAS": "DyBlurYWt",
+                            "COMMENT": "",
+                            "COUNT": 3,
+                            "FORMAT": "",
+                            "ID": "DyBlurYWt",
+                            "LEVEL": 1,
+                            "RANGE": [
+                                0,
+                                15
+                            ],
+                            "TYPE": "CVI_U8"
                         }
                     ]
                 },
@@ -23258,6 +23597,41 @@
                             "RANGE": [
                                 0,
                                 3
+                            ],
+                            "TITLE_H": [
+                                "ISO100",
+                                "ISO200",
+                                "ISO400",
+                                "ISO800",
+                                "ISO1600",
+                                "ISO3200",
+                                "ISO6400",
+                                "ISO12800",
+                                "ISO25600",
+                                "ISO51200",
+                                "ISO102400",
+                                "ISO204800",
+                                "ISO409600",
+                                "ISO819200",
+                                "ISO1638400",
+                                "ISO3276800"
+                            ],
+                            "TYPE": "CVI_U8"
+                        },
+                        {
+                            "ACCESS": "Rw",
+                            "ALIAS": "DyBlurYWt",
+                            "COMMENT": "",
+                            "COUNT": [
+                                3,
+                                16
+                            ],
+                            "FORMAT": "",
+                            "ID": "DyBlurYWt",
+                            "LEVEL": 1,
+                            "RANGE": [
+                                0,
+                                15
                             ],
                             "TITLE_H": [
                                 "ISO100",
@@ -23331,20 +23705,6 @@
                             "RANGE": [
                                 0,
                                 8
-                            ],
-                            "TYPE": "CVI_U8"
-                        },
-                        {
-                            "ACCESS": "Rw",
-                            "ALIAS": "DyBlurYWt",
-                            "COMMENT": "",
-                            "COUNT": 3,
-                            "FORMAT": "",
-                            "ID": "DyBlurYWt",
-                            "LEVEL": 1,
-                            "RANGE": [
-                                0,
-                                15
                             ],
                             "TYPE": "CVI_U8"
                         },
@@ -25545,6 +25905,338 @@
                             "ID": "stAuto",
                             "LEVEL": 0,
                             "TYPE": "ISP_CNR_FILTER_AUTO_ATTR_S"
+                        }
+                    ]
+                },
+                {
+                    "ALIAS": "ISP_ModuleEn_ATTR_S",
+                    "COMMENT": "Defines ISP_ModuleEn_ATTR_S",
+                    "ID": "ISP_ModuleEn_ATTR_S",
+                    "MEMBER": [
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Mlsc",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Mlsc",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Fusion",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Fusion",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "MapCurve",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "MapCurve",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Dpc",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Dpc",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "CrossTalk",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "CrossTalk",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Bnr",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Bnr",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Blc",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Blc",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Rlsc",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Rlsc",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Drc",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Drc",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Demosaic",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Demosaic",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Pfr",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Pfr",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Ccm",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Ccm",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Gamma",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Gamma",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Clut",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Clut",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Csc",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Csc",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Ldci",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Ldci",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Dci",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Dci",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "PreSharpen",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "PreSharpen",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Tnr",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Tnr",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Cnr",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Cnr",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Sharpen",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Sharpen",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Ca",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Ca",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Ca2",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Ca2",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "YContrast",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "YContrast",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Mono",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Mono",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
                         }
                     ]
                 },
@@ -28985,6 +29677,24 @@
                     "MEMBER": [
                         {
                             "ACCESS": "RW",
+                            "ALIAS": "ViPipe",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "ViPipe",
+                            "LEVEL": 0,
+                            "TYPE": "VI_PIPE"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "ViPipe",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "ViPipe",
+                            "LEVEL": 0,
+                            "TYPE": "VI_PIPE"
+                        },
+                        {
+                            "ACCESS": "RW",
                             "ALIAS": "Step",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -31288,9 +31998,9 @@
         "CODE_NAME": "cv184x",
         "COMM_PROTOCOL": "1.0",
         "FULL_NAME": "cv184x",
-        "GENERATOR_VERSION": "(I6c16c0,78e840d)",
+        "GENERATOR_VERSION": "(Ie3f29a,5809f54d)",
         "ISP_BRANCH": "master",
-        "ISP_VERSION": "(I6c16c0,78e840d)",
+        "ISP_VERSION": "(I3a1cf1,f04f5c3c)",
         "PARAMETERS": {
             "PARAM": [
                 {
@@ -31308,7 +32018,7 @@
                 }
             ]
         },
-        "SDK_VERSION": "20250730"
+        "SDK_VERSION": "20250805"
     },
     "FUNCTIONS": {
         "FUNCTION": [
@@ -31329,6 +32039,46 @@
                                 "ISP_TOP_ATTR_S.VpssChn"
                             ],
                             "TITLE": "Top"
+                        },
+                        {
+                            "MEMBER": [
+                                "ISP_TOP_ATTR_S.Mlsc",
+                                "ISP_TOP_ATTR_S.Fusion",
+                                "ISP_TOP_ATTR_S.MapCurve",
+                                "ISP_TOP_ATTR_S.Dpc",
+                                "ISP_TOP_ATTR_S.CrossTalk",
+                                "ISP_TOP_ATTR_S.Bnr",
+                                "ISP_TOP_ATTR_S.Blc",
+                                "ISP_TOP_ATTR_S.Rlsc",
+                                "ISP_TOP_ATTR_S.Drc",
+                                "ISP_TOP_ATTR_S.Demosaic"
+                            ],
+                            "TITLE": "RAW PIPE"
+                        },
+                        {
+                            "MEMBER": [
+                                "ISP_TOP_ATTR_S.Pfr",
+                                "ISP_TOP_ATTR_S.Ccm",
+                                "ISP_TOP_ATTR_S.Gamma",
+                                "ISP_TOP_ATTR_S.Clut",
+                                "ISP_TOP_ATTR_S.Csc"
+                            ],
+                            "TITLE": "RGB PIPE"
+                        },
+                        {
+                            "MEMBER": [
+                                "ISP_TOP_ATTR_S.Ldci",
+                                "ISP_TOP_ATTR_S.Dci",
+                                "ISP_TOP_ATTR_S.PreSharpen",
+                                "ISP_TOP_ATTR_S.Tnr",
+                                "ISP_TOP_ATTR_S.Cnr",
+                                "ISP_TOP_ATTR_S.Sharpen",
+                                "ISP_TOP_ATTR_S.Ca",
+                                "ISP_TOP_ATTR_S.Ca2",
+                                "ISP_TOP_ATTR_S.YContrast",
+                                "ISP_TOP_ATTR_S.Mono"
+                            ],
+                            "TITLE": "YUV PIPE"
                         }
                     ]
                 },
@@ -32804,11 +33554,12 @@
                                 "ISP_TNR_ATTR_S.enOpType",
                                 "ISP_TNR_ATTR_S.updateInterval",
                                 "ISP_TNR_ATTR_S.DbgMode",
-                                "ISP_TNR_ATTR_S.DyBlurYWt",
                                 "ISP_TNR_ATTR_S.DyBlurUVWt",
                                 "ISP_TNR_ATTR_S.DyBlurJndTh",
                                 "ISP_TNR_ATTR_S.stManual.DyBlurStr",
-                                "ISP_TNR_ATTR_S.stAuto.DyBlurStr"
+                                "ISP_TNR_ATTR_S.stManual.DyBlurYWt",
+                                "ISP_TNR_ATTR_S.stAuto.DyBlurStr",
+                                "ISP_TNR_ATTR_S.stAuto.DyBlurYWt"
                             ],
                             "TITLE": "TNR"
                         },
@@ -33557,6 +34308,133 @@
                     "ISPtoVC"
                 ]
             }
+        ],
+        "TOP_SWITCH": [
+            {
+                "MODULE": "LSC",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Mlsc"
+            },
+            {
+                "MODULE": "FSHDR",
+                "MODULE_TITLE": "FusionEnable",
+                "TOP_TITLE": "Fusion"
+            },
+            {
+                "MODULE": "FSHDR",
+                "MODULE_TITLE": "MCurveEnable",
+                "TOP_TITLE": "MapCurve"
+            },
+            {
+                "MODULE": "DPC",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Dpc"
+            },
+            {
+                "MODULE": "Crosstalk",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "CrossTalk"
+            },
+            {
+                "MODULE": "BNR",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Bnr"
+            },
+            {
+                "MODULE": "BLC",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Blc"
+            },
+            {
+                "MODULE": "RLSC",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Rlsc"
+            },
+            {
+                "MODULE": "DRC",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Drc"
+            },
+            {
+                "MODULE": "Demosaic",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Demosaic"
+            },
+            {
+                "MODULE": "PFR",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Pfr"
+            },
+            {
+                "MODULE": "CCM",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Ccm"
+            },
+            {
+                "MODULE": "RGB GAMMA",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Gamma"
+            },
+            {
+                "MODULE": "CLUT",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Clut"
+            },
+            {
+                "MODULE": "CSC",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Csc"
+            },
+            {
+                "MODULE": "LDCI",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Ldci"
+            },
+            {
+                "MODULE": "DCI",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Dci"
+            },
+            {
+                "MODULE": "PreSharpen",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "PreSharpen"
+            },
+            {
+                "MODULE": "3DNR",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Tnr"
+            },
+            {
+                "MODULE": "CNR",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Cnr"
+            },
+            {
+                "MODULE": "Y Sharpen",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Sharpen"
+            },
+            {
+                "MODULE": "CA",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Ca"
+            },
+            {
+                "MODULE": "CA Lite",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Ca2"
+            },
+            {
+                "MODULE": "Y Contrast",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "YContrast"
+            },
+            {
+                "MODULE": "Mono",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Mono"
+            }
         ]
     },
     "JSONRPC": {
@@ -33914,14 +34792,6 @@
                     "VALUE": 1
                 },
                 {
-                    "PATH": "ISP_TNR_ATTR_S.DyBlurYWt",
-                    "VALUE": [
-                        1,
-                        2,
-                        2
-                    ]
-                },
-                {
                     "PATH": "ISP_TNR_ATTR_S.Enable",
                     "VALUE": 1
                 },
@@ -33951,8 +34821,69 @@
                     ]
                 },
                 {
+                    "PATH": "ISP_TNR_ATTR_S.stAuto.DyBlurYWt",
+                    "VALUE": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
                     "PATH": "ISP_TNR_ATTR_S.stManual.DyBlurStr",
                     "VALUE": 3
+                },
+                {
+                    "PATH": "ISP_TNR_ATTR_S.stManual.DyBlurYWt",
+                    "VALUE": [
+                        1,
+                        1,
+                        1
+                    ]
                 },
                 {
                     "PATH": "ISP_TNR_ATTR_S.updateInterval",
@@ -98906,6 +99837,102 @@
         {
             "Top": [
                 {
+                    "PATH": "ISP_TOP_ATTR_S.Blc",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Bnr",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Ca",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Ca2",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Ccm",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Clut",
+                    "VALUE": 0
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Cnr",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.CrossTalk",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Csc",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Dci",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Demosaic",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Dpc",
+                    "VALUE": 0
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Drc",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Fusion",
+                    "VALUE": 0
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Gamma",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Ldci",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.MapCurve",
+                    "VALUE": 0
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Mlsc",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Mono",
+                    "VALUE": 0
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Pfr",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.PreSharpen",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Rlsc",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Sharpen",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Tnr",
+                    "VALUE": 1
+                },
+                {
                     "PATH": "ISP_TOP_ATTR_S.ViChn",
                     "VALUE": 0
                 },
@@ -98919,6 +99946,10 @@
                 },
                 {
                     "PATH": "ISP_TOP_ATTR_S.VpssGrp",
+                    "VALUE": 0
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.YContrast",
                     "VALUE": 0
                 }
             ]

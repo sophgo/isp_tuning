@@ -1379,6 +1379,331 @@
                                 3
                             ],
                             "TYPE": "CVI_U8"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Mlsc",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Mlsc",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Fusion",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Fusion",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "MapCurve",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "MapCurve",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Dpc",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Dpc",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "CrossTalk",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "CrossTalk",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Bnr",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Bnr",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Blc",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Blc",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Rlsc",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Rlsc",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Drc",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Drc",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Demosaic",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Demosaic",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Pfr",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Pfr",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Ccm",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Ccm",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Gamma",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Gamma",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Clut",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Clut",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Csc",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Csc",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Ldci",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Ldci",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Dci",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Dci",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "PreSharpen",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "PreSharpen",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Tnr",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Tnr",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Cnr",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Cnr",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Sharpen",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Sharpen",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Ca",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Ca",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Ca2",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Ca2",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "YContrast",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "YContrast",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Mono",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Mono",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
                         }
                     ]
                 },
@@ -23239,6 +23564,20 @@
                                 3
                             ],
                             "TYPE": "CVI_U8"
+                        },
+                        {
+                            "ACCESS": "Rw",
+                            "ALIAS": "DyBlurYWt",
+                            "COMMENT": "",
+                            "COUNT": 3,
+                            "FORMAT": "",
+                            "ID": "DyBlurYWt",
+                            "LEVEL": 1,
+                            "RANGE": [
+                                0,
+                                15
+                            ],
+                            "TYPE": "CVI_U8"
                         }
                     ]
                 },
@@ -23258,6 +23597,41 @@
                             "RANGE": [
                                 0,
                                 3
+                            ],
+                            "TITLE_H": [
+                                "ISO100",
+                                "ISO200",
+                                "ISO400",
+                                "ISO800",
+                                "ISO1600",
+                                "ISO3200",
+                                "ISO6400",
+                                "ISO12800",
+                                "ISO25600",
+                                "ISO51200",
+                                "ISO102400",
+                                "ISO204800",
+                                "ISO409600",
+                                "ISO819200",
+                                "ISO1638400",
+                                "ISO3276800"
+                            ],
+                            "TYPE": "CVI_U8"
+                        },
+                        {
+                            "ACCESS": "Rw",
+                            "ALIAS": "DyBlurYWt",
+                            "COMMENT": "",
+                            "COUNT": [
+                                3,
+                                16
+                            ],
+                            "FORMAT": "",
+                            "ID": "DyBlurYWt",
+                            "LEVEL": 1,
+                            "RANGE": [
+                                0,
+                                15
                             ],
                             "TITLE_H": [
                                 "ISO100",
@@ -23331,20 +23705,6 @@
                             "RANGE": [
                                 0,
                                 8
-                            ],
-                            "TYPE": "CVI_U8"
-                        },
-                        {
-                            "ACCESS": "Rw",
-                            "ALIAS": "DyBlurYWt",
-                            "COMMENT": "",
-                            "COUNT": 3,
-                            "FORMAT": "",
-                            "ID": "DyBlurYWt",
-                            "LEVEL": 1,
-                            "RANGE": [
-                                0,
-                                15
                             ],
                             "TYPE": "CVI_U8"
                         },
@@ -25545,6 +25905,338 @@
                             "ID": "stAuto",
                             "LEVEL": 0,
                             "TYPE": "ISP_CNR_FILTER_AUTO_ATTR_S"
+                        }
+                    ]
+                },
+                {
+                    "ALIAS": "ISP_ModuleEn_ATTR_S",
+                    "COMMENT": "Defines ISP_ModuleEn_ATTR_S",
+                    "ID": "ISP_ModuleEn_ATTR_S",
+                    "MEMBER": [
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Mlsc",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Mlsc",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Fusion",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Fusion",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "MapCurve",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "MapCurve",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Dpc",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Dpc",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "CrossTalk",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "CrossTalk",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Bnr",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Bnr",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Blc",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Blc",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Rlsc",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Rlsc",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Drc",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Drc",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Demosaic",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Demosaic",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Pfr",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Pfr",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Ccm",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Ccm",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Gamma",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Gamma",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Clut",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Clut",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Csc",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Csc",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Ldci",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Ldci",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Dci",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Dci",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "PreSharpen",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "PreSharpen",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Tnr",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Tnr",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Cnr",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Cnr",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Sharpen",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Sharpen",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Ca",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Ca",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Ca2",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Ca2",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "YContrast",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "YContrast",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Mono",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Mono",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
                         }
                     ]
                 },
@@ -28985,6 +29677,24 @@
                     "MEMBER": [
                         {
                             "ACCESS": "RW",
+                            "ALIAS": "ViPipe",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "ViPipe",
+                            "LEVEL": 0,
+                            "TYPE": "VI_PIPE"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "ViPipe",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "ViPipe",
+                            "LEVEL": 0,
+                            "TYPE": "VI_PIPE"
+                        },
+                        {
+                            "ACCESS": "RW",
                             "ALIAS": "Step",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -31288,9 +31998,9 @@
         "CODE_NAME": "cv184x",
         "COMM_PROTOCOL": "1.0",
         "FULL_NAME": "cv184x",
-        "GENERATOR_VERSION": "(I6c16c0,78e840d)",
+        "GENERATOR_VERSION": "(Ie3f29a,5809f54d)",
         "ISP_BRANCH": "master",
-        "ISP_VERSION": "(I6c16c0,78e840d)",
+        "ISP_VERSION": "(I3a1cf1,f04f5c3c)",
         "PARAMETERS": {
             "PARAM": [
                 {
@@ -31308,7 +32018,7 @@
                 }
             ]
         },
-        "SDK_VERSION": "20250730"
+        "SDK_VERSION": "20250805"
     },
     "FUNCTIONS": {
         "FUNCTION": [
@@ -31329,6 +32039,46 @@
                                 "ISP_TOP_ATTR_S.VpssChn"
                             ],
                             "TITLE": "Top"
+                        },
+                        {
+                            "MEMBER": [
+                                "ISP_TOP_ATTR_S.Mlsc",
+                                "ISP_TOP_ATTR_S.Fusion",
+                                "ISP_TOP_ATTR_S.MapCurve",
+                                "ISP_TOP_ATTR_S.Dpc",
+                                "ISP_TOP_ATTR_S.CrossTalk",
+                                "ISP_TOP_ATTR_S.Bnr",
+                                "ISP_TOP_ATTR_S.Blc",
+                                "ISP_TOP_ATTR_S.Rlsc",
+                                "ISP_TOP_ATTR_S.Drc",
+                                "ISP_TOP_ATTR_S.Demosaic"
+                            ],
+                            "TITLE": "RAW PIPE"
+                        },
+                        {
+                            "MEMBER": [
+                                "ISP_TOP_ATTR_S.Pfr",
+                                "ISP_TOP_ATTR_S.Ccm",
+                                "ISP_TOP_ATTR_S.Gamma",
+                                "ISP_TOP_ATTR_S.Clut",
+                                "ISP_TOP_ATTR_S.Csc"
+                            ],
+                            "TITLE": "RGB PIPE"
+                        },
+                        {
+                            "MEMBER": [
+                                "ISP_TOP_ATTR_S.Ldci",
+                                "ISP_TOP_ATTR_S.Dci",
+                                "ISP_TOP_ATTR_S.PreSharpen",
+                                "ISP_TOP_ATTR_S.Tnr",
+                                "ISP_TOP_ATTR_S.Cnr",
+                                "ISP_TOP_ATTR_S.Sharpen",
+                                "ISP_TOP_ATTR_S.Ca",
+                                "ISP_TOP_ATTR_S.Ca2",
+                                "ISP_TOP_ATTR_S.YContrast",
+                                "ISP_TOP_ATTR_S.Mono"
+                            ],
+                            "TITLE": "YUV PIPE"
                         }
                     ]
                 },
@@ -32804,11 +33554,12 @@
                                 "ISP_TNR_ATTR_S.enOpType",
                                 "ISP_TNR_ATTR_S.updateInterval",
                                 "ISP_TNR_ATTR_S.DbgMode",
-                                "ISP_TNR_ATTR_S.DyBlurYWt",
                                 "ISP_TNR_ATTR_S.DyBlurUVWt",
                                 "ISP_TNR_ATTR_S.DyBlurJndTh",
                                 "ISP_TNR_ATTR_S.stManual.DyBlurStr",
-                                "ISP_TNR_ATTR_S.stAuto.DyBlurStr"
+                                "ISP_TNR_ATTR_S.stManual.DyBlurYWt",
+                                "ISP_TNR_ATTR_S.stAuto.DyBlurStr",
+                                "ISP_TNR_ATTR_S.stAuto.DyBlurYWt"
                             ],
                             "TITLE": "TNR"
                         },
@@ -33557,6 +34308,133 @@
                     "ISPtoVC"
                 ]
             }
+        ],
+        "TOP_SWITCH": [
+            {
+                "MODULE": "LSC",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Mlsc"
+            },
+            {
+                "MODULE": "FSHDR",
+                "MODULE_TITLE": "FusionEnable",
+                "TOP_TITLE": "Fusion"
+            },
+            {
+                "MODULE": "FSHDR",
+                "MODULE_TITLE": "MCurveEnable",
+                "TOP_TITLE": "MapCurve"
+            },
+            {
+                "MODULE": "DPC",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Dpc"
+            },
+            {
+                "MODULE": "Crosstalk",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "CrossTalk"
+            },
+            {
+                "MODULE": "BNR",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Bnr"
+            },
+            {
+                "MODULE": "BLC",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Blc"
+            },
+            {
+                "MODULE": "RLSC",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Rlsc"
+            },
+            {
+                "MODULE": "DRC",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Drc"
+            },
+            {
+                "MODULE": "Demosaic",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Demosaic"
+            },
+            {
+                "MODULE": "PFR",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Pfr"
+            },
+            {
+                "MODULE": "CCM",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Ccm"
+            },
+            {
+                "MODULE": "RGB GAMMA",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Gamma"
+            },
+            {
+                "MODULE": "CLUT",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Clut"
+            },
+            {
+                "MODULE": "CSC",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Csc"
+            },
+            {
+                "MODULE": "LDCI",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Ldci"
+            },
+            {
+                "MODULE": "DCI",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Dci"
+            },
+            {
+                "MODULE": "PreSharpen",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "PreSharpen"
+            },
+            {
+                "MODULE": "3DNR",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Tnr"
+            },
+            {
+                "MODULE": "CNR",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Cnr"
+            },
+            {
+                "MODULE": "Y Sharpen",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Sharpen"
+            },
+            {
+                "MODULE": "CA",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Ca"
+            },
+            {
+                "MODULE": "CA Lite",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Ca2"
+            },
+            {
+                "MODULE": "Y Contrast",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "YContrast"
+            },
+            {
+                "MODULE": "Mono",
+                "MODULE_TITLE": "Enable",
+                "TOP_TITLE": "Mono"
+            }
         ]
     },
     "JSONRPC": {
@@ -33914,14 +34792,6 @@
                     "VALUE": 1
                 },
                 {
-                    "PATH": "ISP_TNR_ATTR_S.DyBlurYWt",
-                    "VALUE": [
-                        0,
-                        2,
-                        2
-                    ]
-                },
-                {
                     "PATH": "ISP_TNR_ATTR_S.Enable",
                     "VALUE": 1
                 },
@@ -33951,8 +34821,69 @@
                     ]
                 },
                 {
+                    "PATH": "ISP_TNR_ATTR_S.stAuto.DyBlurYWt",
+                    "VALUE": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
                     "PATH": "ISP_TNR_ATTR_S.stManual.DyBlurStr",
                     "VALUE": 3
+                },
+                {
+                    "PATH": "ISP_TNR_ATTR_S.stManual.DyBlurYWt",
+                    "VALUE": [
+                        1,
+                        1,
+                        1
+                    ]
                 },
                 {
                     "PATH": "ISP_TNR_ATTR_S.updateInterval",
@@ -63393,250 +64324,250 @@
                 {
                     "PATH": "ISP_EXP_INFO_S.au32AE_Hist256Value",
                     "VALUE": [
-                        873,
-                        861,
+                        555,
                         190,
-                        1,
-                        1424,
-                        1559,
-                        881,
-                        1191,
-                        1830,
-                        2508,
-                        1789,
-                        1871,
-                        2707,
-                        3170,
-                        2575,
-                        2920,
-                        4064,
-                        2313,
-                        3367,
-                        3290,
-                        3609,
-                        2965,
-                        3543,
-                        2366,
-                        3904,
-                        2559,
-                        4329,
-                        2409,
-                        4237,
-                        2550,
-                        3936,
-                        3326,
-                        2100,
-                        2020,
-                        2865,
-                        2193,
-                        1364,
-                        993,
-                        1902,
-                        1208,
-                        712,
-                        990,
-                        1123,
-                        1042,
-                        475,
-                        620,
-                        461,
-                        750,
-                        283,
-                        450,
-                        398,
-                        520,
-                        292,
-                        371,
-                        321,
-                        405,
-                        248,
-                        310,
-                        207,
-                        325,
-                        178,
-                        278,
-                        231,
-                        288,
-                        216,
-                        254,
-                        217,
-                        262,
-                        248,
-                        171,
+                        35,
+                        0,
+                        432,
+                        350,
+                        490,
+                        565,
                         251,
-                        254,
-                        234,
-                        204,
+                        203,
+                        302,
+                        338,
+                        304,
+                        222,
+                        263,
+                        252,
+                        448,
+                        367,
                         247,
-                        207,
+                        313,
+                        513,
+                        547,
+                        429,
+                        547,
+                        507,
+                        502,
+                        370,
+                        484,
+                        438,
+                        448,
+                        354,
+                        491,
+                        296,
+                        342,
+                        283,
+                        402,
+                        209,
                         215,
-                        181,
-                        228,
-                        154,
-                        241,
-                        157,
-                        227,
-                        182,
-                        229,
+                        172,
+                        261,
+                        194,
                         193,
-                        232,
-                        204,
-                        197,
-                        173,
-                        217,
-                        150,
-                        184,
-                        121,
-                        186,
-                        158,
-                        138,
-                        171,
-                        115,
-                        207,
-                        111,
-                        188,
-                        116,
-                        166,
-                        114,
-                        164,
-                        133,
-                        159,
+                        149,
+                        206,
+                        182,
+                        196,
                         144,
-                        173,
-                        113,
-                        199,
-                        129,
-                        228,
-                        123,
-                        185,
-                        128,
                         193,
-                        163,
-                        198,
-                        182,
-                        181,
-                        130,
-                        225,
-                        167,
+                        196,
+                        187,
+                        145,
+                        192,
+                        189,
+                        190,
+                        139,
+                        189,
+                        191,
+                        184,
+                        140,
+                        188,
+                        189,
+                        195,
                         138,
-                        175,
-                        148,
+                        184,
+                        189,
+                        184,
                         142,
-                        123,
-                        152,
-                        105,
-                        112,
-                        75,
-                        117,
-                        109,
-                        91,
-                        83,
-                        97,
-                        81,
-                        87,
-                        69,
-                        90,
-                        59,
-                        84,
-                        55,
-                        81,
-                        70,
-                        68,
-                        79,
-                        69,
-                        87,
-                        62,
-                        77,
-                        50,
-                        78,
-                        48,
-                        76,
-                        62,
-                        73,
-                        64,
-                        76,
-                        63,
-                        78,
-                        66,
-                        83,
-                        52,
-                        76,
-                        56,
-                        82,
-                        67,
-                        82,
-                        84,
-                        85,
-                        72,
-                        87,
-                        83,
-                        56,
-                        87,
-                        70,
-                        87,
-                        71,
-                        87,
-                        70,
-                        89,
-                        75,
-                        87,
-                        57,
-                        95,
-                        61,
-                        94,
-                        76,
-                        94,
-                        79,
-                        92,
-                        76,
-                        96,
-                        78,
-                        96,
-                        63,
-                        57,
-                        91,
-                        90,
-                        79,
-                        65,
-                        87,
-                        57,
-                        100,
-                        56,
-                        103,
-                        57,
-                        86,
-                        59,
-                        92,
-                        75,
-                        90,
-                        78,
-                        89,
-                        63,
-                        105,
-                        65,
-                        108,
-                        61,
-                        93,
-                        66,
-                        97,
-                        78,
-                        95,
-                        105,
-                        74,
-                        106,
+                        188,
+                        191,
+                        187,
+                        143,
+                        184,
+                        192,
+                        197,
+                        143,
+                        192,
+                        209,
+                        199,
+                        149,
+                        199,
+                        217,
+                        220,
+                        163,
+                        201,
+                        209,
+                        216,
+                        169,
+                        223,
+                        188,
+                        194,
+                        146,
+                        206,
+                        172,
+                        168,
                         124,
-                        115,
-                        95,
-                        115,
-                        92,
+                        182,
+                        161,
+                        154,
                         121,
-                        96,
-                        116,
-                        79,
+                        166,
+                        156,
+                        161,
+                        121,
+                        155,
+                        155,
+                        157,
+                        120,
+                        149,
+                        162,
+                        165,
+                        118,
+                        154,
+                        171,
+                        163,
+                        122,
+                        160,
+                        167,
+                        168,
+                        174,
+                        126,
+                        163,
+                        165,
+                        170,
+                        133,
+                        161,
+                        171,
+                        166,
+                        128,
+                        138,
+                        142,
+                        157,
+                        117,
+                        101,
+                        113,
+                        129,
+                        103,
+                        58,
+                        70,
+                        82,
+                        68,
+                        26,
+                        32,
+                        36,
+                        35,
+                        18,
+                        19,
+                        19,
+                        16,
+                        14,
+                        15,
+                        16,
+                        12,
+                        14,
+                        13,
+                        13,
+                        10,
+                        12,
+                        13,
+                        11,
+                        10,
+                        13,
+                        13,
+                        15,
+                        10,
+                        10,
+                        11,
+                        13,
+                        8,
+                        10,
+                        10,
+                        10,
+                        8,
+                        9,
+                        9,
+                        9,
+                        7,
+                        10,
+                        10,
+                        9,
+                        7,
+                        10,
+                        8,
+                        8,
+                        7,
+                        9,
+                        10,
+                        9,
+                        7,
+                        10,
+                        11,
+                        10,
+                        8,
+                        11,
+                        11,
+                        10,
+                        9,
+                        11,
+                        11,
+                        9,
+                        8,
+                        9,
+                        10,
+                        12,
+                        9,
+                        9,
+                        10,
+                        11,
+                        7,
+                        10,
+                        9,
+                        11,
+                        7,
+                        7,
+                        9,
+                        9,
+                        8,
+                        6,
+                        6,
+                        7,
+                        8,
+                        2,
+                        4,
+                        5,
+                        5,
+                        4,
+                        4,
+                        4,
+                        4,
+                        3,
+                        4,
+                        4,
+                        4,
+                        4,
+                        5,
+                        4,
+                        4,
+                        5,
+                        6,
+                        5,
+                        4,
                         0,
                         0,
                         0,
-                        2505,
+                        856,
                         0,
                         0,
                         0,
@@ -63661,7 +64592,7 @@
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.fLightValue",
-                    "VALUE": 4.72
+                    "VALUE": 8.180000305175781
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.s16HistError",
@@ -63670,16 +64601,16 @@
                 {
                     "PATH": "ISP_EXP_INFO_S.stAERoute.astRouteNode",
                     "VALUE": [
-                        15,
+                        119,
                         1024,
                         10,
                         1024,
-                        49970,
+                        49762,
                         1024,
                         10,
                         1024,
-                        49970,
-                        34502692,
+                        49762,
+                        8388352,
                         10,
                         1024,
                         0,
@@ -63743,7 +64674,7 @@
                 {
                     "PATH": "ISP_EXP_INFO_S.stAERouteEx.astRouteExNode",
                     "VALUE": [
-                        23,
+                        119,
                         1024,
                         1024,
                         1024,
@@ -63756,7 +64687,7 @@
                         10,
                         1024,
                         39822,
-                        67456,
+                        16384,
                         1024,
                         1024,
                         10,
@@ -63916,7 +64847,7 @@
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.stAERouteSF.u32TotalNum",
-                    "VALUE": 1
+                    "VALUE": 0
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.stAERouteSFEx.astRouteExNode",
@@ -64021,11 +64952,11 @@
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.stAERouteSFEx.u32TotalNum",
-                    "VALUE": 1
+                    "VALUE": 0
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u32AGain",
-                    "VALUE": 2016
+                    "VALUE": 1024
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u32AGainSF",
@@ -64041,15 +64972,15 @@
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u32ExpTime",
-                    "VALUE": 49970
+                    "VALUE": 12981
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u32Exposure",
-                    "VALUE": 451982
+                    "VALUE": 28032
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u32FirstStableTime",
-                    "VALUE": 499960
+                    "VALUE": 1220034
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u32Fps",
@@ -64057,11 +64988,11 @@
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u32ISO",
-                    "VALUE": 209
+                    "VALUE": 100
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u32ISOCalibrate",
-                    "VALUE": 209
+                    "VALUE": 100
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u32ISOSF",
@@ -64069,7 +65000,7 @@
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u32ISPDGain",
-                    "VALUE": 1091
+                    "VALUE": 1024
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u32ISPDGainSF",
@@ -64077,7 +65008,7 @@
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u32LinesPer500ms",
-                    "VALUE": 33750
+                    "VALUE": 16870
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u32LongExpTime",
@@ -64093,7 +65024,7 @@
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u32RefExpRatio",
-                    "VALUE": 9433
+                    "VALUE": 12704
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u32ShortExpTime",
@@ -64105,11 +65036,11 @@
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u8AveLum",
-                    "VALUE": 36
+                    "VALUE": 49
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u8LEFrameAvgLuma",
-                    "VALUE": 36
+                    "VALUE": 49
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u8SEFrameAvgLuma",
@@ -97294,11 +98225,11 @@
                 },
                 {
                     "PATH": "ISP_PUB_ATTR_S.stSnsSize.u32Height",
-                    "VALUE": 2160
+                    "VALUE": 1080
                 },
                 {
                     "PATH": "ISP_PUB_ATTR_S.stSnsSize.u32Width",
-                    "VALUE": 3840
+                    "VALUE": 1920
                 },
                 {
                     "PATH": "ISP_PUB_ATTR_S.stWndRect.s32X",
@@ -97310,11 +98241,11 @@
                 },
                 {
                     "PATH": "ISP_PUB_ATTR_S.stWndRect.u32Height",
-                    "VALUE": 2160
+                    "VALUE": 1080
                 },
                 {
                     "PATH": "ISP_PUB_ATTR_S.stWndRect.u32Width",
-                    "VALUE": 3840
+                    "VALUE": 1920
                 },
                 {
                     "PATH": "ISP_PUB_ATTR_S.u8EnableMaster",
@@ -98906,6 +99837,102 @@
         {
             "Top": [
                 {
+                    "PATH": "ISP_TOP_ATTR_S.Blc",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Bnr",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Ca",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Ca2",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Ccm",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Clut",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Cnr",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.CrossTalk",
+                    "VALUE": 0
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Csc",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Dci",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Demosaic",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Dpc",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Drc",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Fusion",
+                    "VALUE": 0
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Gamma",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Ldci",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.MapCurve",
+                    "VALUE": 0
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Mlsc",
+                    "VALUE": 0
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Mono",
+                    "VALUE": 0
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Pfr",
+                    "VALUE": 0
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.PreSharpen",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Rlsc",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Sharpen",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.Tnr",
+                    "VALUE": 1
+                },
+                {
                     "PATH": "ISP_TOP_ATTR_S.ViChn",
                     "VALUE": 0
                 },
@@ -98919,6 +99946,10 @@
                 },
                 {
                     "PATH": "ISP_TOP_ATTR_S.VpssGrp",
+                    "VALUE": 0
+                },
+                {
+                    "PATH": "ISP_TOP_ATTR_S.YContrast",
                     "VALUE": 0
                 }
             ]
@@ -100699,15 +101730,15 @@
                 {
                     "PATH": "ISP_WB_INFO_S.au16CCM",
                     "VALUE": [
-                        1364,
-                        32881,
-                        32995,
-                        33112,
-                        1607,
-                        33007,
-                        2,
-                        33411,
-                        1665
+                        1521,
+                        32797,
+                        33236,
+                        33234,
+                        1836,
+                        33114,
+                        32777,
+                        33379,
+                        1644
                     ]
                 },
                 {
@@ -100716,7 +101747,7 @@
                 },
                 {
                     "PATH": "ISP_WB_INFO_S.s16Bv",
-                    "VALUE": 471
+                    "VALUE": 818
                 },
                 {
                     "PATH": "ISP_WB_INFO_S.u16ActiveShift",
@@ -100724,11 +101755,11 @@
                 },
                 {
                     "PATH": "ISP_WB_INFO_S.u16Bgain",
-                    "VALUE": 1591
+                    "VALUE": 2004
                 },
                 {
                     "PATH": "ISP_WB_INFO_S.u16ColorTemp",
-                    "VALUE": 5734
+                    "VALUE": 4312
                 },
                 {
                     "PATH": "ISP_WB_INFO_S.u16Gbgain",
@@ -100756,7 +101787,7 @@
                 },
                 {
                     "PATH": "ISP_WB_INFO_S.u16Rgain",
-                    "VALUE": 2039
+                    "VALUE": 1884
                 },
                 {
                     "PATH": "ISP_WB_INFO_S.u16Saturation",
@@ -100764,7 +101795,7 @@
                 },
                 {
                     "PATH": "ISP_WB_INFO_S.u32FirstStableTime",
-                    "VALUE": 133389
+                    "VALUE": 140435
                 },
                 {
                     "PATH": "ISP_WB_INFO_S.u8MultiDegree",
