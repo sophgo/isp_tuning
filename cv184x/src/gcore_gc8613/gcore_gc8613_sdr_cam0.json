@@ -649,10 +649,6 @@
                     "COMMENT": "",
                     "ENUM_ITEM": [
                         {
-                            "ID": "MCURVE_DEFAULT",
-                            "VALUE": 0
-                        },
-                        {
                             "ID": "MCURVE_AUTO"
                         },
                         {
@@ -7716,14 +7712,28 @@
                         },
                         {
                             "ACCESS": "RW",
-                            "ALIAS": "TargetStrength",
+                            "ALIAS": "TargetStrengthR",
                             "COMMENT": "",
                             "COUNT": 3,
                             "FORMAT": "",
-                            "ID": "u8TargetStrength",
+                            "ID": "u8TargetStrengthR",
                             "LEVEL": 0,
                             "RANGE": [
-                                1,
+                                64,
+                                255
+                            ],
+                            "TYPE": "CVI_U8"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "TargetStrengthB",
+                            "COMMENT": "",
+                            "COUNT": 3,
+                            "FORMAT": "",
+                            "ID": "u8TargetStrengthB",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                64,
                                 255
                             ],
                             "TYPE": "CVI_U8"
@@ -17450,6 +17460,32 @@
                         },
                         {
                             "ACCESS": "RW",
+                            "ALIAS": "ReduceByEvRatioThr",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "ReduceByEvRatioThr",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                64,
+                                255
+                            ],
+                            "TYPE": "CVI_U8"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "ReduceByEvRatioStr",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "ReduceByEvRatioStr",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                255
+                            ],
+                            "TYPE": "CVI_U8"
+                        },
+                        {
+                            "ACCESS": "RW",
                             "ALIAS": "Manual",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -19246,11 +19282,20 @@
                             "FORMAT": "",
                             "ID": "MCurveMode",
                             "LEVEL": 0,
+                            "TYPE": "ISP_MCURVE_MODE_E"
+                        },
+                        {
+                            "ACCESS": "",
+                            "ALIAS": "MCurveAutoSEMin",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "MCurveAutoSEMin",
+                            "LEVEL": 0,
                             "RANGE": [
                                 0,
-                                2
+                                4095
                             ],
-                            "TYPE": "ISP_MCURVE_MODE_E"
+                            "TYPE": "CVI_U16"
                         },
                         {
                             "ACCESS": "",
@@ -19264,6 +19309,19 @@
                                 4095
                             ],
                             "TYPE": "CVI_U16"
+                        },
+                        {
+                            "ACCESS": "",
+                            "ALIAS": "MCurveSmooth",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "MCurveSmooth",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                255
+                            ],
+                            "TYPE": "CVI_U8"
                         },
                         {
                             "ACCESS": "",
@@ -19356,6 +19414,68 @@
                                 255
                             ],
                             "TYPE": "CVI_U8"
+                        }
+                    ]
+                },
+                {
+                    "ALIAS": "ISP_FSHDR_MAP_CURVE_INFO_S",
+                    "COMMENT": "Defines ISP_FSHDR_MAP_CURVE_INFO_S",
+                    "ID": "ISP_FSHDR_MAP_CURVE_INFO_S",
+                    "MEMBER": [
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "EV_FMT",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "EV_FMT",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                255
+                            ],
+                            "TYPE": "CVI_U8"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "MapCurveL",
+                            "COMMENT": "",
+                            "COUNT": 65,
+                            "FORMAT": "",
+                            "ID": "MapCurveL",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "MapCurveR",
+                            "COMMENT": "",
+                            "COUNT": 17,
+                            "FORMAT": "",
+                            "ID": "MapCurveR",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "MapCurveEnd",
+                            "COMMENT": "",
+                            "COUNT": 17,
+                            "FORMAT": "",
+                            "ID": "MapCurveEnd",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
                         }
                     ]
                 },
@@ -20892,6 +21012,19 @@
                                 255
                             ],
                             "TYPE": "CVI_U8"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "TuningMode",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "TuningMode",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
                         },
                         {
                             "ACCESS": "RW",
@@ -31998,9 +32131,9 @@
         "CODE_NAME": "cv184x",
         "COMM_PROTOCOL": "1.0",
         "FULL_NAME": "cv184x",
-        "GENERATOR_VERSION": "(Ie3f29a,5809f54d)",
+        "GENERATOR_VERSION": "(I725400,82682b4f0)",
         "ISP_BRANCH": "master",
-        "ISP_VERSION": "(I3a1cf1,f04f5c3c)",
+        "ISP_VERSION": "(If56a3f,4726e6858)",
         "PARAMETERS": {
             "PARAM": [
                 {
@@ -32018,7 +32151,7 @@
                 }
             ]
         },
-        "SDK_VERSION": "20250805"
+        "SDK_VERSION": "20250916"
     },
     "FUNCTIONS": {
         "FUNCTION": [
@@ -32279,7 +32412,8 @@
                                 "ISP_WB_ATTR_S.stAuto.bNaturalCastEn",
                                 "ISP_AWB_ATTR_EX_S.adjBgainMode",
                                 "ISP_AWB_ATTR_EX_S.u16TargetCT",
-                                "ISP_AWB_ATTR_EX_S.u8TargetStrength",
+                                "ISP_AWB_ATTR_EX_S.u8TargetStrengthR",
+                                "ISP_AWB_ATTR_EX_S.u8TargetStrengthB",
                                 "HEADER:Curve",
                                 "ISP_WB_ATTR_S.stAuto.u16HighColorTemp",
                                 "ISP_WB_ATTR_S.stAuto.u16LowColorTemp",
@@ -32972,10 +33106,17 @@
                             "TITLE": "Common"
                         },
                         {
+                            "MAPCURVE": [
+                                {
+                                    "ALIAS": "MapCurve"
+                                }
+                            ],
                             "MEMBER": [
                                 "ISP_FSHDR_ATTR_S.MCurveEnable",
                                 "ISP_FSHDR_ATTR_S.MCurveMode",
+                                "ISP_FSHDR_ATTR_S.MCurveAutoSEMin",
                                 "ISP_FSHDR_ATTR_S.MCurveManualSEMax",
+                                "ISP_FSHDR_ATTR_S.MCurveSmooth",
                                 "ISP_FSHDR_ATTR_S.MCurveDelta",
                                 "ISP_FSHDR_ATTR_S.MCurveX1",
                                 "ISP_FSHDR_ATTR_S.MCurveBldRatio",
@@ -33445,6 +33586,7 @@
                                 "ISP_PFR_ATTR_S.Enable",
                                 "ISP_PFR_ATTR_S.enOpType",
                                 "ISP_PFR_ATTR_S.UpdateInterval",
+                                "ISP_PFR_ATTR_S.TuningMode",
                                 "ISP_PFR_ATTR_S.LumaEN",
                                 "ISP_PFR_ATTR_S.UVENLut",
                                 "ISP_PFR_ATTR_S.HueENLut",
@@ -33993,7 +34135,9 @@
                                 "ISP_PRESHARPEN_ATTR_S.GammaSelection",
                                 "ISP_PRESHARPEN_ATTR_S.ChnSelection",
                                 "ISP_PRESHARPEN_ATTR_S.ParamAutoEn",
-                                "ISP_PRESHARPEN_ATTR_S.EdgeOutFormat"
+                                "ISP_PRESHARPEN_ATTR_S.EdgeOutFormat",
+                                "ISP_PRESHARPEN_ATTR_S.ReduceByEvRatioThr",
+                                "ISP_PRESHARPEN_ATTR_S.ReduceByEvRatioStr"
                             ],
                             "TITLE": "Common"
                         },
@@ -35783,10 +35927,10 @@
                 {
                     "PATH": "ISP_TNR_MV_ATTR_S.stManual.AcbdEdgeAdj",
                     "VALUE": [
-                        100,
-                        0,
-                        150,
-                        200
+                        2,
+                        3,
+                        4,
+                        4
                     ]
                 },
                 {
@@ -64324,250 +64468,250 @@
                 {
                     "PATH": "ISP_EXP_INFO_S.au32AE_Hist256Value",
                     "VALUE": [
-                        555,
-                        190,
-                        35,
+                        2261,
+                        1171,
+                        49,
                         0,
-                        432,
-                        350,
+                        4826,
+                        5069,
+                        3499,
+                        3976,
+                        2251,
+                        2921,
+                        3333,
+                        2759,
+                        2074,
+                        2070,
+                        2512,
+                        2151,
+                        1212,
+                        1939,
+                        2182,
+                        1994,
+                        1691,
+                        1147,
+                        1709,
+                        1747,
+                        1276,
+                        1302,
+                        1603,
+                        1406,
+                        1325,
+                        1369,
+                        955,
+                        1482,
+                        962,
+                        1192,
+                        811,
+                        1262,
+                        1251,
+                        993,
+                        1172,
+                        960,
+                        867,
+                        1285,
+                        1302,
+                        852,
+                        1028,
+                        1040,
+                        1273,
+                        1303,
+                        915,
+                        921,
+                        1160,
+                        992,
+                        982,
+                        670,
+                        1035,
+                        1060,
+                        747,
+                        916,
+                        619,
+                        949,
+                        825,
+                        693,
+                        711,
+                        865,
+                        726,
+                        739,
+                        775,
+                        527,
+                        530,
+                        551,
+                        684,
+                        468,
+                        396,
+                        603,
+                        622,
+                        523,
+                        588,
+                        389,
+                        590,
+                        589,
+                        473,
                         490,
-                        565,
-                        251,
-                        203,
-                        302,
-                        338,
-                        304,
-                        222,
-                        263,
-                        252,
-                        448,
-                        367,
-                        247,
-                        313,
-                        513,
-                        547,
-                        429,
-                        547,
-                        507,
-                        502,
-                        370,
-                        484,
-                        438,
-                        448,
-                        354,
-                        491,
-                        296,
-                        342,
-                        283,
-                        402,
-                        209,
-                        215,
-                        172,
+                        496,
+                        580,
+                        543,
+                        449,
+                        457,
+                        568,
+                        538,
+                        544,
+                        359,
+                        546,
+                        553,
+                        456,
+                        539,
+                        364,
+                        327,
+                        512,
+                        527,
+                        358,
+                        270,
+                        433,
+                        457,
+                        478,
                         261,
-                        194,
-                        193,
-                        149,
-                        206,
-                        182,
-                        196,
-                        144,
-                        193,
-                        196,
-                        187,
-                        145,
-                        192,
-                        189,
-                        190,
-                        139,
-                        189,
-                        191,
-                        184,
-                        140,
-                        188,
-                        189,
-                        195,
-                        138,
-                        184,
-                        189,
-                        184,
-                        142,
-                        188,
-                        191,
-                        187,
-                        143,
-                        184,
-                        192,
-                        197,
-                        143,
-                        192,
-                        209,
-                        199,
-                        149,
-                        199,
-                        217,
-                        220,
-                        163,
-                        201,
-                        209,
-                        216,
-                        169,
-                        223,
-                        188,
-                        194,
-                        146,
-                        206,
-                        172,
-                        168,
-                        124,
-                        182,
-                        161,
-                        154,
-                        121,
-                        166,
-                        156,
-                        161,
-                        121,
-                        155,
-                        155,
-                        157,
-                        120,
-                        149,
-                        162,
-                        165,
-                        118,
-                        154,
-                        171,
-                        163,
-                        122,
+                        291,
+                        298,
+                        391,
+                        257,
+                        181,
+                        280,
+                        304,
+                        226,
+                        236,
                         160,
-                        167,
-                        168,
-                        174,
-                        126,
-                        163,
-                        165,
-                        170,
-                        133,
-                        161,
-                        171,
-                        166,
-                        128,
-                        138,
-                        142,
+                        245,
+                        176,
                         157,
-                        117,
-                        101,
-                        113,
-                        129,
-                        103,
-                        58,
-                        70,
+                        164,
+                        175,
+                        132,
+                        138,
+                        158,
+                        105,
                         82,
+                        117,
+                        115,
+                        85,
                         68,
-                        26,
+                        110,
+                        88,
+                        116,
+                        95,
+                        65,
+                        99,
+                        106,
+                        85,
+                        59,
+                        88,
+                        92,
+                        76,
+                        67,
+                        64,
+                        70,
+                        69,
+                        74,
+                        51,
+                        76,
+                        55,
+                        67,
+                        67,
+                        45,
+                        39,
+                        59,
+                        52,
+                        55,
+                        34,
+                        54,
+                        60,
+                        57,
+                        49,
+                        33,
+                        51,
+                        55,
+                        48,
+                        33,
+                        50,
+                        41,
+                        51,
+                        51,
                         32,
+                        48,
+                        44,
+                        54,
+                        51,
+                        33,
+                        40,
+                        59,
+                        49,
+                        46,
+                        34,
+                        57,
+                        55,
+                        61,
+                        49,
+                        37,
+                        53,
+                        55,
+                        47,
+                        34,
+                        54,
+                        41,
+                        40,
+                        43,
+                        30,
+                        45,
+                        31,
                         36,
-                        35,
+                        31,
+                        32,
+                        28,
+                        30,
+                        26,
+                        27,
+                        16,
+                        26,
+                        26,
                         18,
+                        20,
                         19,
-                        19,
+                        25,
+                        26,
+                        21,
+                        15,
+                        23,
+                        18,
+                        20,
+                        12,
+                        20,
+                        20,
+                        17,
+                        20,
                         16,
+                        17,
+                        20,
+                        20,
+                        12,
+                        18,
+                        16,
+                        21,
+                        20,
+                        13,
+                        13,
+                        14,
+                        18,
+                        14,
+                        9,
                         14,
                         15,
-                        16,
-                        12,
-                        14,
-                        13,
-                        13,
-                        10,
-                        12,
-                        13,
                         11,
-                        10,
-                        13,
-                        13,
-                        15,
-                        10,
-                        10,
-                        11,
-                        13,
-                        8,
-                        10,
-                        10,
-                        10,
-                        8,
-                        9,
-                        9,
-                        9,
-                        7,
-                        10,
-                        10,
-                        9,
-                        7,
-                        10,
-                        8,
-                        8,
-                        7,
-                        9,
-                        10,
-                        9,
-                        7,
-                        10,
-                        11,
-                        10,
-                        8,
-                        11,
-                        11,
-                        10,
-                        9,
-                        11,
-                        11,
-                        9,
-                        8,
-                        9,
-                        10,
-                        12,
-                        9,
-                        9,
-                        10,
-                        11,
-                        7,
-                        10,
-                        9,
-                        11,
-                        7,
-                        7,
-                        9,
-                        9,
-                        8,
-                        6,
-                        6,
-                        7,
-                        8,
-                        2,
-                        4,
-                        5,
-                        5,
-                        4,
-                        4,
-                        4,
-                        4,
-                        3,
-                        4,
-                        4,
-                        4,
-                        4,
-                        5,
-                        4,
-                        4,
-                        5,
-                        6,
-                        5,
-                        4,
                         0,
                         0,
                         0,
-                        856,
+                        1501,
                         0,
                         0,
                         0,
@@ -64592,7 +64736,7 @@
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.fLightValue",
-                    "VALUE": 8.180000305175781
+                    "VALUE": 4.679999828338623
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.s16HistError",
@@ -64601,16 +64745,16 @@
                 {
                     "PATH": "ISP_EXP_INFO_S.stAERoute.astRouteNode",
                     "VALUE": [
-                        119,
+                        15,
                         1024,
                         10,
                         1024,
-                        49762,
+                        49970,
                         1024,
                         10,
                         1024,
-                        49762,
-                        8388352,
+                        49970,
+                        34502692,
                         10,
                         1024,
                         0,
@@ -64674,7 +64818,7 @@
                 {
                     "PATH": "ISP_EXP_INFO_S.stAERouteEx.astRouteExNode",
                     "VALUE": [
-                        119,
+                        23,
                         1024,
                         1024,
                         1024,
@@ -64687,7 +64831,7 @@
                         10,
                         1024,
                         39822,
-                        16384,
+                        67456,
                         1024,
                         1024,
                         10,
@@ -64956,7 +65100,7 @@
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u32AGain",
-                    "VALUE": 1024
+                    "VALUE": 2016
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u32AGainSF",
@@ -64964,7 +65108,7 @@
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u32DGain",
-                    "VALUE": 1024
+                    "VALUE": 1088
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u32DGainSF",
@@ -64972,15 +65116,15 @@
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u32ExpTime",
-                    "VALUE": 12981
+                    "VALUE": 49970
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u32Exposure",
-                    "VALUE": 28032
+                    "VALUE": 455355
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u32FirstStableTime",
-                    "VALUE": 1220034
+                    "VALUE": 600546
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u32Fps",
@@ -64988,11 +65132,11 @@
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u32ISO",
-                    "VALUE": 100
+                    "VALUE": 211
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u32ISOCalibrate",
-                    "VALUE": 100
+                    "VALUE": 211
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u32ISOSF",
@@ -65000,7 +65144,7 @@
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u32ISPDGain",
-                    "VALUE": 1024
+                    "VALUE": 1034
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u32ISPDGainSF",
@@ -65008,7 +65152,7 @@
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u32LinesPer500ms",
-                    "VALUE": 16870
+                    "VALUE": 33750
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u32LongExpTime",
@@ -65024,7 +65168,7 @@
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u32RefExpRatio",
-                    "VALUE": 12704
+                    "VALUE": 7908
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u32ShortExpTime",
@@ -65036,11 +65180,11 @@
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u8AveLum",
-                    "VALUE": 49
+                    "VALUE": 35
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u8LEFrameAvgLuma",
-                    "VALUE": 49
+                    "VALUE": 35
                 },
                 {
                     "PATH": "ISP_EXP_INFO_S.u8SEFrameAvgLuma",
@@ -65440,6 +65584,10 @@
                     "VALUE": 600
                 },
                 {
+                    "PATH": "ISP_FSHDR_ATTR_S.MCurveAutoSEMin",
+                    "VALUE": 3000
+                },
+                {
                     "PATH": "ISP_FSHDR_ATTR_S.MCurveBldRatio",
                     "VALUE": 0
                 },
@@ -65480,6 +65628,10 @@
                 {
                     "PATH": "ISP_FSHDR_ATTR_S.MCurveMode",
                     "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_FSHDR_ATTR_S.MCurveSmooth",
+                    "VALUE": 200
                 },
                 {
                     "PATH": "ISP_FSHDR_ATTR_S.MCurveX1",
@@ -95015,6 +95167,10 @@
                     ]
                 },
                 {
+                    "PATH": "ISP_PFR_ATTR_S.TuningMode",
+                    "VALUE": 0
+                },
+                {
                     "PATH": "ISP_PFR_ATTR_S.ULut",
                     "VALUE": [
                         175,
@@ -95442,6 +95598,14 @@
                 {
                     "PATH": "ISP_PRESHARPEN_ATTR_S.ParamAutoEn",
                     "VALUE": 0
+                },
+                {
+                    "PATH": "ISP_PRESHARPEN_ATTR_S.ReduceByEvRatioStr",
+                    "VALUE": 0
+                },
+                {
+                    "PATH": "ISP_PRESHARPEN_ATTR_S.ReduceByEvRatioThr",
+                    "VALUE": 80
                 },
                 {
                     "PATH": "ISP_PRESHARPEN_ATTR_S.SatShtCtrlEn",
@@ -98225,11 +98389,11 @@
                 },
                 {
                     "PATH": "ISP_PUB_ATTR_S.stSnsSize.u32Height",
-                    "VALUE": 1080
+                    "VALUE": 2160
                 },
                 {
                     "PATH": "ISP_PUB_ATTR_S.stSnsSize.u32Width",
-                    "VALUE": 1920
+                    "VALUE": 3840
                 },
                 {
                     "PATH": "ISP_PUB_ATTR_S.stWndRect.s32X",
@@ -98241,11 +98405,11 @@
                 },
                 {
                     "PATH": "ISP_PUB_ATTR_S.stWndRect.u32Height",
-                    "VALUE": 1080
+                    "VALUE": 2160
                 },
                 {
                     "PATH": "ISP_PUB_ATTR_S.stWndRect.u32Width",
-                    "VALUE": 1920
+                    "VALUE": 3840
                 },
                 {
                     "PATH": "ISP_PUB_ATTR_S.u8EnableMaster",
@@ -100396,7 +100560,15 @@
                     "VALUE": 128
                 },
                 {
-                    "PATH": "ISP_AWB_ATTR_EX_S.u8TargetStrength",
+                    "PATH": "ISP_AWB_ATTR_EX_S.u8TargetStrengthB",
+                    "VALUE": [
+                        128,
+                        128,
+                        128
+                    ]
+                },
+                {
+                    "PATH": "ISP_AWB_ATTR_EX_S.u8TargetStrengthR",
                     "VALUE": [
                         128,
                         128,
@@ -101730,15 +101902,15 @@
                 {
                     "PATH": "ISP_WB_INFO_S.au16CCM",
                     "VALUE": [
-                        1521,
-                        32797,
-                        33236,
-                        33234,
-                        1836,
-                        33114,
-                        32777,
-                        33379,
-                        1644
+                        1571,
+                        32948,
+                        33135,
+                        33240,
+                        1741,
+                        33013,
+                        2,
+                        33364,
+                        1618
                     ]
                 },
                 {
@@ -101747,7 +101919,7 @@
                 },
                 {
                     "PATH": "ISP_WB_INFO_S.s16Bv",
-                    "VALUE": 818
+                    "VALUE": 468
                 },
                 {
                     "PATH": "ISP_WB_INFO_S.u16ActiveShift",
@@ -101755,11 +101927,11 @@
                 },
                 {
                     "PATH": "ISP_WB_INFO_S.u16Bgain",
-                    "VALUE": 2004
+                    "VALUE": 1961
                 },
                 {
                     "PATH": "ISP_WB_INFO_S.u16ColorTemp",
-                    "VALUE": 4312
+                    "VALUE": 3773
                 },
                 {
                     "PATH": "ISP_WB_INFO_S.u16Gbgain",
@@ -101787,7 +101959,7 @@
                 },
                 {
                     "PATH": "ISP_WB_INFO_S.u16Rgain",
-                    "VALUE": 1884
+                    "VALUE": 1552
                 },
                 {
                     "PATH": "ISP_WB_INFO_S.u16Saturation",
@@ -101795,7 +101967,7 @@
                 },
                 {
                     "PATH": "ISP_WB_INFO_S.u32FirstStableTime",
-                    "VALUE": 140435
+                    "VALUE": 134325
                 },
                 {
                     "PATH": "ISP_WB_INFO_S.u8MultiDegree",

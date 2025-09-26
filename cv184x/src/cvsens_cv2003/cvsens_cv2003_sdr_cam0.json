@@ -649,10 +649,6 @@
                     "COMMENT": "",
                     "ENUM_ITEM": [
                         {
-                            "ID": "MCURVE_DEFAULT",
-                            "VALUE": 0
-                        },
-                        {
                             "ID": "MCURVE_AUTO"
                         },
                         {
@@ -7716,14 +7712,28 @@
                         },
                         {
                             "ACCESS": "RW",
-                            "ALIAS": "TargetStrength",
+                            "ALIAS": "TargetStrengthR",
                             "COMMENT": "",
                             "COUNT": 3,
                             "FORMAT": "",
-                            "ID": "u8TargetStrength",
+                            "ID": "u8TargetStrengthR",
                             "LEVEL": 0,
                             "RANGE": [
-                                1,
+                                64,
+                                255
+                            ],
+                            "TYPE": "CVI_U8"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "TargetStrengthB",
+                            "COMMENT": "",
+                            "COUNT": 3,
+                            "FORMAT": "",
+                            "ID": "u8TargetStrengthB",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                64,
                                 255
                             ],
                             "TYPE": "CVI_U8"
@@ -17450,6 +17460,32 @@
                         },
                         {
                             "ACCESS": "RW",
+                            "ALIAS": "ReduceByEvRatioThr",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "ReduceByEvRatioThr",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                64,
+                                255
+                            ],
+                            "TYPE": "CVI_U8"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "ReduceByEvRatioStr",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "ReduceByEvRatioStr",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                255
+                            ],
+                            "TYPE": "CVI_U8"
+                        },
+                        {
+                            "ACCESS": "RW",
                             "ALIAS": "Manual",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -19246,11 +19282,20 @@
                             "FORMAT": "",
                             "ID": "MCurveMode",
                             "LEVEL": 0,
+                            "TYPE": "ISP_MCURVE_MODE_E"
+                        },
+                        {
+                            "ACCESS": "",
+                            "ALIAS": "MCurveAutoSEMin",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "MCurveAutoSEMin",
+                            "LEVEL": 0,
                             "RANGE": [
                                 0,
-                                2
+                                4095
                             ],
-                            "TYPE": "ISP_MCURVE_MODE_E"
+                            "TYPE": "CVI_U16"
                         },
                         {
                             "ACCESS": "",
@@ -19264,6 +19309,19 @@
                                 4095
                             ],
                             "TYPE": "CVI_U16"
+                        },
+                        {
+                            "ACCESS": "",
+                            "ALIAS": "MCurveSmooth",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "MCurveSmooth",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                255
+                            ],
+                            "TYPE": "CVI_U8"
                         },
                         {
                             "ACCESS": "",
@@ -19356,6 +19414,68 @@
                                 255
                             ],
                             "TYPE": "CVI_U8"
+                        }
+                    ]
+                },
+                {
+                    "ALIAS": "ISP_FSHDR_MAP_CURVE_INFO_S",
+                    "COMMENT": "Defines ISP_FSHDR_MAP_CURVE_INFO_S",
+                    "ID": "ISP_FSHDR_MAP_CURVE_INFO_S",
+                    "MEMBER": [
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "EV_FMT",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "EV_FMT",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                255
+                            ],
+                            "TYPE": "CVI_U8"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "MapCurveL",
+                            "COMMENT": "",
+                            "COUNT": 65,
+                            "FORMAT": "",
+                            "ID": "MapCurveL",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "MapCurveR",
+                            "COMMENT": "",
+                            "COUNT": 17,
+                            "FORMAT": "",
+                            "ID": "MapCurveR",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "MapCurveEnd",
+                            "COMMENT": "",
+                            "COUNT": 17,
+                            "FORMAT": "",
+                            "ID": "MapCurveEnd",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
                         }
                     ]
                 },
@@ -20892,6 +21012,19 @@
                                 255
                             ],
                             "TYPE": "CVI_U8"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "TuningMode",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "TuningMode",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
                         },
                         {
                             "ACCESS": "RW",
@@ -31998,9 +32131,9 @@
         "CODE_NAME": "cv184x",
         "COMM_PROTOCOL": "1.0",
         "FULL_NAME": "cv184x",
-        "GENERATOR_VERSION": "(Ie3f29a,5809f54d)",
+        "GENERATOR_VERSION": "(I725400,82682b4f0)",
         "ISP_BRANCH": "master",
-        "ISP_VERSION": "(I3a1cf1,f04f5c3c)",
+        "ISP_VERSION": "(If56a3f,4726e6858)",
         "PARAMETERS": {
             "PARAM": [
                 {
@@ -32018,7 +32151,7 @@
                 }
             ]
         },
-        "SDK_VERSION": "20250805"
+        "SDK_VERSION": "20250916"
     },
     "FUNCTIONS": {
         "FUNCTION": [
@@ -32279,7 +32412,8 @@
                                 "ISP_WB_ATTR_S.stAuto.bNaturalCastEn",
                                 "ISP_AWB_ATTR_EX_S.adjBgainMode",
                                 "ISP_AWB_ATTR_EX_S.u16TargetCT",
-                                "ISP_AWB_ATTR_EX_S.u8TargetStrength",
+                                "ISP_AWB_ATTR_EX_S.u8TargetStrengthR",
+                                "ISP_AWB_ATTR_EX_S.u8TargetStrengthB",
                                 "HEADER:Curve",
                                 "ISP_WB_ATTR_S.stAuto.u16HighColorTemp",
                                 "ISP_WB_ATTR_S.stAuto.u16LowColorTemp",
@@ -32972,10 +33106,17 @@
                             "TITLE": "Common"
                         },
                         {
+                            "MAPCURVE": [
+                                {
+                                    "ALIAS": "MapCurve"
+                                }
+                            ],
                             "MEMBER": [
                                 "ISP_FSHDR_ATTR_S.MCurveEnable",
                                 "ISP_FSHDR_ATTR_S.MCurveMode",
+                                "ISP_FSHDR_ATTR_S.MCurveAutoSEMin",
                                 "ISP_FSHDR_ATTR_S.MCurveManualSEMax",
+                                "ISP_FSHDR_ATTR_S.MCurveSmooth",
                                 "ISP_FSHDR_ATTR_S.MCurveDelta",
                                 "ISP_FSHDR_ATTR_S.MCurveX1",
                                 "ISP_FSHDR_ATTR_S.MCurveBldRatio",
@@ -33445,6 +33586,7 @@
                                 "ISP_PFR_ATTR_S.Enable",
                                 "ISP_PFR_ATTR_S.enOpType",
                                 "ISP_PFR_ATTR_S.UpdateInterval",
+                                "ISP_PFR_ATTR_S.TuningMode",
                                 "ISP_PFR_ATTR_S.LumaEN",
                                 "ISP_PFR_ATTR_S.UVENLut",
                                 "ISP_PFR_ATTR_S.HueENLut",
@@ -33993,7 +34135,9 @@
                                 "ISP_PRESHARPEN_ATTR_S.GammaSelection",
                                 "ISP_PRESHARPEN_ATTR_S.ChnSelection",
                                 "ISP_PRESHARPEN_ATTR_S.ParamAutoEn",
-                                "ISP_PRESHARPEN_ATTR_S.EdgeOutFormat"
+                                "ISP_PRESHARPEN_ATTR_S.EdgeOutFormat",
+                                "ISP_PRESHARPEN_ATTR_S.ReduceByEvRatioThr",
+                                "ISP_PRESHARPEN_ATTR_S.ReduceByEvRatioStr"
                             ],
                             "TITLE": "Common"
                         },
@@ -34906,12 +35050,12 @@
                         4,
                         2,
                         2,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
-                        100,
+                        16,
+                        16,
+                        16,
+                        16,
+                        16,
+                        16,
                         3,
                         3,
                         3,
@@ -34938,12 +35082,12 @@
                         4,
                         4,
                         4,
-                        150,
-                        150,
-                        150,
-                        150,
-                        150,
-                        150,
+                        16,
+                        16,
+                        16,
+                        16,
+                        16,
+                        16,
                         4,
                         4,
                         4,
@@ -34954,12 +35098,12 @@
                         4,
                         4,
                         4,
-                        200,
-                        200,
-                        200,
-                        200,
-                        200,
-                        200
+                        16,
+                        16,
+                        16,
+                        16,
+                        16,
+                        16
                     ]
                 },
                 {
@@ -35783,10 +35927,10 @@
                 {
                     "PATH": "ISP_TNR_MV_ATTR_S.stManual.AcbdEdgeAdj",
                     "VALUE": [
-                        100,
-                        0,
-                        150,
-                        200
+                        4,
+                        3,
+                        4,
+                        4
                     ]
                 },
                 {
@@ -44244,7 +44388,7 @@
                 },
                 {
                     "PATH": "ISP_CA2_ATTR_S.UpdateInterval",
-                    "VALUE": 0
+                    "VALUE": 1
                 },
                 {
                     "PATH": "ISP_CA2_ATTR_S.enOpType",
@@ -65440,6 +65584,10 @@
                     "VALUE": 600
                 },
                 {
+                    "PATH": "ISP_FSHDR_ATTR_S.MCurveAutoSEMin",
+                    "VALUE": 3000
+                },
+                {
                     "PATH": "ISP_FSHDR_ATTR_S.MCurveBldRatio",
                     "VALUE": 0
                 },
@@ -65480,6 +65628,10 @@
                 {
                     "PATH": "ISP_FSHDR_ATTR_S.MCurveMode",
                     "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_FSHDR_ATTR_S.MCurveSmooth",
+                    "VALUE": 200
                 },
                 {
                     "PATH": "ISP_FSHDR_ATTR_S.MCurveX1",
@@ -95015,6 +95167,10 @@
                     ]
                 },
                 {
+                    "PATH": "ISP_PFR_ATTR_S.TuningMode",
+                    "VALUE": 0
+                },
+                {
                     "PATH": "ISP_PFR_ATTR_S.ULut",
                     "VALUE": [
                         175,
@@ -95442,6 +95598,14 @@
                 {
                     "PATH": "ISP_PRESHARPEN_ATTR_S.ParamAutoEn",
                     "VALUE": 0
+                },
+                {
+                    "PATH": "ISP_PRESHARPEN_ATTR_S.ReduceByEvRatioStr",
+                    "VALUE": 0
+                },
+                {
+                    "PATH": "ISP_PRESHARPEN_ATTR_S.ReduceByEvRatioThr",
+                    "VALUE": 80
                 },
                 {
                     "PATH": "ISP_PRESHARPEN_ATTR_S.SatShtCtrlEn",
@@ -100396,7 +100560,15 @@
                     "VALUE": 128
                 },
                 {
-                    "PATH": "ISP_AWB_ATTR_EX_S.u8TargetStrength",
+                    "PATH": "ISP_AWB_ATTR_EX_S.u8TargetStrengthB",
+                    "VALUE": [
+                        128,
+                        128,
+                        128
+                    ]
+                },
+                {
+                    "PATH": "ISP_AWB_ATTR_EX_S.u8TargetStrengthR",
                     "VALUE": [
                         128,
                         128,
