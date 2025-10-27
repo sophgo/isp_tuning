@@ -445,6 +445,126 @@
                     "ID": "ISP_AWB_ALG_E"
                 },
                 {
+                    "ALIAS": "ISP_AWB_WDR_STS_E",
+                    "COMMENT": "",
+                    "ENUM_ITEM": [
+                        {
+                            "ID": "WDR_STS_NORMAL"
+                        },
+                        {
+                            "ID": "WDR_STS_LE"
+                        },
+                        {
+                            "ID": "WDR_STS_SE"
+                        }
+                    ],
+                    "ID": "ISP_AWB_WDR_STS_E"
+                },
+                {
+                    "ALIAS": "AF_DIRECTION",
+                    "COMMENT": "",
+                    "ENUM_ITEM": [
+                        {
+                            "ID": "AF_DIR_NEAR"
+                        },
+                        {
+                            "ID": "AF_DIR_FAR"
+                        }
+                    ],
+                    "ID": "AF_DIRECTION"
+                },
+                {
+                    "ALIAS": "AF_CHASINGFOCUS_MODE",
+                    "COMMENT": "",
+                    "ENUM_ITEM": [
+                        {
+                            "ID": "AF_CHASINGFOCUS_FAST_MODE"
+                        },
+                        {
+                            "ID": "AF_CHASINGFOCUS_NORMAL_MODE"
+                        }
+                    ],
+                    "ID": "AF_CHASINGFOCUS_MODE"
+                },
+                {
+                    "ALIAS": "AF_STATUS",
+                    "COMMENT": "",
+                    "ENUM_ITEM": [
+                        {
+                            "ID": "AF_NOT_INIT"
+                        },
+                        {
+                            "ID": "AF_INIT_POSITION"
+                        },
+                        {
+                            "ID": "AF_INIT"
+                        },
+                        {
+                            "ID": "AF_TRIGGER_FOCUS"
+                        },
+                        {
+                            "ID": "AF_DETECT_DIRECTION"
+                        },
+                        {
+                            "ID": "AF_SERACH_BEST_POS"
+                        },
+                        {
+                            "ID": "AF_LOCATE_BEST_POS"
+                        },
+                        {
+                            "ID": "AF_FOCUSED"
+                        },
+                        {
+                            "ID": "AF_REVERSE_DIRECTION"
+                        },
+                        {
+                            "ID": "AF_CHASING_FOCUS"
+                        }
+                    ],
+                    "ID": "AF_STATUS"
+                },
+                {
+                    "ALIAS": "AF_MANUAL_TYPE",
+                    "COMMENT": "",
+                    "ENUM_ITEM": [
+                        {
+                            "ID": "OP_TYPE_ZOOM"
+                        },
+                        {
+                            "ID": "OP_TYPE_FOCUS"
+                        },
+                        {
+                            "ID": "OP_TYPE_AUTO_FOCUS"
+                        },
+                        {
+                            "ID": "OP_TYPE_ZOOM_POS"
+                        },
+                        {
+                            "ID": "OP_TYPE_FOCUS_POS"
+                        }
+                    ],
+                    "ID": "AF_MANUAL_TYPE"
+                },
+                {
+                    "ALIAS": "ISP_AF_MOTOR_SPEED_E",
+                    "COMMENT": "",
+                    "ENUM_ITEM": [
+                        {
+                            "ID": "AF_MOTOR_SPEED_4X"
+                        },
+                        {
+                            "ID": "AF_MOTOR_SPEED_2X"
+                        },
+                        {
+                            "ID": "AF_MOTOR_SPEED_1X"
+                        },
+                        {
+                            "ID": "AF_MOTOR_SPEED_HALF"
+                        }
+                    ],
+                    "ID": "ISP_AF_MOTOR_SPEED_E"
+                },
+                {
                     "ALIAS": "ISP_NR_TUNING_MODE_E",
                     "COMMENT": "",
                     "ENUM_ITEM": [
@@ -655,6 +775,19 @@
                         }
                     ],
                     "ID": "ISP_ANTIFLICKER_MODE_E"
+                },
+                {
+                    "ALIAS": "AF_MOTOR_TYPE",
+                    "COMMENT": "",
+                    "ENUM_ITEM": [
+                        {
+                            "ID": "AF_MOTOR_STEPPER"
+                        },
+                        {
+                            "ID": "AF_MOTOR_VCM"
+                        }
+                    ],
+                    "ID": "AF_MOTOR_TYPE"
                 },
                 {
                     "ALIAS": "ISP_CTRL_CMD_E",
@@ -1684,29 +1817,6 @@
                     "ID": "VIDEO_DISPLAY_MODE_E"
                 },
                 {
-                    "ALIAS": "FRAME_FLAG_E",
-                    "COMMENT": "",
-                    "ENUM_ITEM": [
-                        {
-                            "ID": "FRAME_FLAG_SNAP_FLASH",
-                            "VALUE": 1
-                        },
-                        {
-                            "ID": "FRAME_FLAG_SNAP_CUR",
-                            "VALUE": 1
-                        },
-                        {
-                            "ID": "FRAME_FLAG_SNAP_REF",
-                            "VALUE": 1
-                        },
-                        {
-                            "ID": "FRAME_FLAG_SNAP_END",
-                            "VALUE": 1
-                        }
-                    ],
-                    "ID": "FRAME_FLAG_E"
-                },
-                {
                     "ALIAS": "COLOR_GAMUT_E",
                     "COMMENT": "",
                     "ENUM_ITEM": [
@@ -1840,28 +1950,6 @@
                     "ID": "PROC_AMP_E"
                 },
                 {
-                    "ALIAS": "SEQ_STATUS",
-                    "COMMENT": "",
-                    "ENUM_ITEM": [
-                        {
-                            "ID": "SEQ_INIT_NON"
-                        },
-                        {
-                            "ID": "SEQ_INIT_START"
-                        },
-                        {
-                            "ID": "SEQ_CHANGE"
-                        },
-                        {
-                            "ID": "SEQ_DECODE_START"
-                        },
-                        {
-                            "ID": "SEQ_DECODE_FINISH"
-                        }
-                    ],
-                    "ID": "SEQ_STATUS"
-                },
-                {
                     "ALIAS": "VO_INTF_TYPE_E",
                     "COMMENT": "",
                     "ENUM_ITEM": [
@@ -1962,6 +2050,9 @@
                         },
                         {
                             "ID": "VO_OUTPUT_640x480_60"
+                        },
+                        {
+                            "ID": "VO_OUTPUT_480x640_60"
                         },
                         {
                             "ID": "VO_OUTPUT_720x1280_60"
@@ -6263,6 +6354,23 @@
                             "ID": "stVParam_FIR",
                             "LEVEL": 0,
                             "TYPE": "ISP_AF_V_PARAM_S"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Weight",
+                            "COMMENT": "",
+                            "COUNT": [
+                                15,
+                                17
+                            ],
+                            "FORMAT": "",
+                            "ID": "au8Weight",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                15
+                            ],
+                            "TYPE": "CVI_U8"
                         }
                     ]
                 },
@@ -7968,32 +8076,6 @@
                         },
                         {
                             "ACCESS": "RW",
-                            "ALIAS": "RGStrength",
-                            "COMMENT": "",
-                            "FORMAT": "",
-                            "ID": "u8RGStrength",
-                            "LEVEL": 1,
-                            "RANGE": [
-                                0,
-                                255
-                            ],
-                            "TYPE": "CVI_U8"
-                        },
-                        {
-                            "ACCESS": "RW",
-                            "ALIAS": "BGStrength",
-                            "COMMENT": "",
-                            "FORMAT": "",
-                            "ID": "u8BGStrength",
-                            "LEVEL": 1,
-                            "RANGE": [
-                                0,
-                                255
-                            ],
-                            "TYPE": "CVI_U8"
-                        },
-                        {
-                            "ACCESS": "RW",
                             "ALIAS": "Speed",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -8385,6 +8467,34 @@
                         },
                         {
                             "ACCESS": "RW",
+                            "ALIAS": "TargetCT",
+                            "COMMENT": "",
+                            "COUNT": 3,
+                            "FORMAT": "",
+                            "ID": "u16TargetCT",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                1,
+                                16384
+                            ],
+                            "TYPE": "CVI_U16"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "TargetStrength",
+                            "COMMENT": "",
+                            "COUNT": 3,
+                            "FORMAT": "",
+                            "ID": "u8TargetStrength",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                1,
+                                255
+                            ],
+                            "TYPE": "CVI_U8"
+                        },
+                        {
+                            "ACCESS": "RW",
                             "ALIAS": "Interference",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -8586,6 +8696,15 @@
                             "ID": "enAlgType",
                             "LEVEL": 0,
                             "TYPE": "ISP_AWB_ALG_E"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "WdrStsMode",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "enWdrStsMode",
+                            "LEVEL": 1,
+                            "TYPE": "ISP_AWB_WDR_STS_E"
                         },
                         {
                             "ACCESS": "RW",
@@ -8814,6 +8933,568 @@
                                 32767
                             ],
                             "TYPE": "CVI_S16"
+                        }
+                    ]
+                },
+                {
+                    "ALIAS": "ISP_FOCUS_MANUAL_ATTR_S",
+                    "COMMENT": "Defines ISP_FOCUS_MANUAL_ATTR_S",
+                    "ID": "ISP_FOCUS_MANUAL_ATTR_S",
+                    "MEMBER": [
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "OpType",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "enOpType",
+                            "LEVEL": 0,
+                            "TYPE": "AF_MANUAL_TYPE"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "ManualDir",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "enManualDir",
+                            "LEVEL": 0,
+                            "TYPE": "AF_DIRECTION"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "ManualStep",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u16ManualStep",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1024
+                            ],
+                            "TYPE": "CVI_U16"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "ManualPos",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u16ManualPos",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                32768
+                            ],
+                            "TYPE": "CVI_U16"
+                        }
+                    ]
+                },
+                {
+                    "ALIAS": "ISP_FOCUS_ATTR_S",
+                    "COMMENT": "Defines ISP_FOCUS_ATTR_S",
+                    "ID": "ISP_FOCUS_ATTR_S",
+                    "MEMBER": [
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Enable",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "bEnable",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "DebugMode",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u8DebugMode",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                255
+                            ],
+                            "TYPE": "CVI_U8"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "OpType",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "enOpType",
+                            "LEVEL": 0,
+                            "TYPE": "ISP_OP_TYPE_E"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "RunInterval",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u8RunInterval",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                1,
+                                16
+                            ],
+                            "TYPE": "CVI_U8"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "RealTimeFocus",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "bRealTimeFocus",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "ChasingFocus",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "bChasingFocus",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "ReFocus",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "bReFocus",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "MixHlc",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "bMixHlc",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "RtFocusStableFrm",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u8RtFocusStableFrm",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                1,
+                                255
+                            ],
+                            "TYPE": "CVI_U8"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "RtMaxDiffFvRatio",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u16RtMaxDiffFvRatio",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                1024,
+                                4096
+                            ],
+                            "TYPE": "CVI_U16"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "MaxDiffFvRatio",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u16MaxDiffFvRatio",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                1024,
+                                16384
+                            ],
+                            "TYPE": "CVI_U16"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "MaxDiffLumaRatio",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u16MaxDiffLumaRatio",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                1024,
+                                4096
+                            ],
+                            "TYPE": "CVI_U16"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "DetectDiffRatio",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u16DetectDiffRatio",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                1024,
+                                4096
+                            ],
+                            "TYPE": "CVI_U16"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "SearchDiffRatio",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u16SearchDiffRatio",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                1024,
+                                4096
+                            ],
+                            "TYPE": "CVI_U16"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "LocalDiffRatio",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u16LocalDiffRatio",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                1024,
+                                4096
+                            ],
+                            "TYPE": "CVI_U16"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "InitStep",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u8InitStep",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                1,
+                                255
+                            ],
+                            "TYPE": "CVI_U8"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "FindStep",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u8FindStep",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                1,
+                                255
+                            ],
+                            "TYPE": "CVI_U8"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "LocateStep",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u8LocateStep",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                1,
+                                255
+                            ],
+                            "TYPE": "CVI_U8"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "InitDir",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "enInitDir",
+                            "LEVEL": 0,
+                            "TYPE": "AF_DIRECTION"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "MaxRotateCnt",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u16MaxRotateCnt",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                1024,
+                                16384
+                            ],
+                            "TYPE": "CVI_U16"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "ChasingFocusMode",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "enChasingFocusMode",
+                            "LEVEL": 0,
+                            "TYPE": "AF_CHASINGFOCUS_MODE"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Manual",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "stManual",
+                            "LEVEL": 0,
+                            "TYPE": "ISP_FOCUS_MANUAL_ATTR_S"
+                        }
+                    ]
+                },
+                {
+                    "ALIAS": "ISP_FOCUS_Q_INFO_S",
+                    "COMMENT": "Defines ISP_FOCUS_Q_INFO_S",
+                    "ID": "ISP_FOCUS_Q_INFO_S",
+                    "MEMBER": [
+                        {
+                            "ACCESS": "R",
+                            "ALIAS": "EStatus",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "eStatus",
+                            "LEVEL": 0,
+                            "TYPE": "AF_STATUS"
+                        },
+                        {
+                            "ACCESS": "R",
+                            "ALIAS": "PreFv",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u32PreFv",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        },
+                        {
+                            "ACCESS": "R",
+                            "ALIAS": "CurFv",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u32CurFv",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        },
+                        {
+                            "ACCESS": "R",
+                            "ALIAS": "MaxFv",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u32MaxFv",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        },
+                        {
+                            "ACCESS": "R",
+                            "ALIAS": "PreLuma",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u8PreLuma",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                255
+                            ],
+                            "TYPE": "CVI_U8"
+                        },
+                        {
+                            "ACCESS": "R",
+                            "ALIAS": "CurLuma",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u8CurLuma",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                255
+                            ],
+                            "TYPE": "CVI_U8"
+                        },
+                        {
+                            "ACCESS": "R",
+                            "ALIAS": "EZoomDir",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "eZoomDir",
+                            "LEVEL": 0,
+                            "TYPE": "AF_DIRECTION"
+                        },
+                        {
+                            "ACCESS": "R",
+                            "ALIAS": "ZoomStep",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u16ZoomStep",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                65535
+                            ],
+                            "TYPE": "CVI_U16"
+                        },
+                        {
+                            "ACCESS": "R",
+                            "ALIAS": "ZoomPos",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u16ZoomPos",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                65535
+                            ],
+                            "TYPE": "CVI_U16"
+                        },
+                        {
+                            "ACCESS": "R",
+                            "ALIAS": "EFocusDir",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "eFocusDir",
+                            "LEVEL": 0,
+                            "TYPE": "AF_DIRECTION"
+                        },
+                        {
+                            "ACCESS": "R",
+                            "ALIAS": "FocusStep",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u16FocusStep",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                65535
+                            ],
+                            "TYPE": "CVI_U16"
+                        },
+                        {
+                            "ACCESS": "R",
+                            "ALIAS": "FocusPos",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u16FocusPos",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                65535
+                            ],
+                            "TYPE": "CVI_U16"
+                        },
+                        {
+                            "ACCESS": "R",
+                            "ALIAS": "MaxFvPos",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u16MaxFvPos",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                65535
+                            ],
+                            "TYPE": "CVI_U16"
+                        },
+                        {
+                            "ACCESS": "R",
+                            "ALIAS": "ZoomMinPos",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u16ZoomMinPos",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                65535
+                            ],
+                            "TYPE": "CVI_U16"
+                        },
+                        {
+                            "ACCESS": "R",
+                            "ALIAS": "ZoomMaxPos",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u16ZoomMaxPos",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                65535
+                            ],
+                            "TYPE": "CVI_U16"
+                        },
+                        {
+                            "ACCESS": "R",
+                            "ALIAS": "FocusMinPos",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u16FocusMinPos",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                65535
+                            ],
+                            "TYPE": "CVI_U16"
+                        },
+                        {
+                            "ACCESS": "R",
+                            "ALIAS": "FocusMaxPos",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u16FocusMaxPos",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                65535
+                            ],
+                            "TYPE": "CVI_U16"
+                        },
+                        {
+                            "ACCESS": "R",
+                            "ALIAS": "EZoomSpeed",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "eZoomSpeed",
+                            "LEVEL": 0,
+                            "TYPE": "ISP_AF_MOTOR_SPEED_E"
+                        },
+                        {
+                            "ACCESS": "R",
+                            "ALIAS": "EFocusSpeed",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "eFocusSpeed",
+                            "LEVEL": 0,
+                            "TYPE": "ISP_AF_MOTOR_SPEED_E"
                         }
                     ]
                 },
@@ -33846,6 +34527,111 @@
                     ]
                 },
                 {
+                    "ALIAS": "ISP_AWB_RATIO_ATTR_S",
+                    "COMMENT": "Defines ISP_AWB_RATIO_ATTR_S",
+                    "ID": "ISP_AWB_RATIO_ATTR_S",
+                    "MEMBER": [
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Enable",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "bEnable",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "RGainRatio",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u32RGainRatio",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "BGainRatio",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u32BGainRatio",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "GGainRatio",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u32GGainRatio",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        }
+                    ]
+                },
+                {
+                    "ALIAS": "ISP_AF_VCM_ATTR_S",
+                    "COMMENT": "Defines ISP_AF_VCM_ATTR_S",
+                    "ID": "ISP_AF_VCM_ATTR_S",
+                    "MEMBER": [
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "InfinitePos",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u32InfinitePos",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "MacroPos",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u32MacroPos",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "MediumPos",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u32MediumPos",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        }
+                    ]
+                },
+                {
                     "ALIAS": "ISP_AF_PARAM_S",
                     "COMMENT": "Defines ISP_AF_PARAM_S",
                     "ID": "ISP_AF_PARAM_S",
@@ -33865,6 +34651,32 @@
                             "COMMENT": "",
                             "FORMAT": "",
                             "ID": "u8WDRMode",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                255
+                            ],
+                            "TYPE": "CVI_U8"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "AWBZoneRow",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u8AWBZoneRow",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                255
+                            ],
+                            "TYPE": "CVI_U8"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "AWBZoneCol",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u8AWBZoneCol",
                             "LEVEL": 0,
                             "RANGE": [
                                 0,
@@ -33894,10 +34706,127 @@
                     "MEMBER": [
                         {
                             "ACCESS": "RW",
+                            "ALIAS": "AEStable",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "bAEStable",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                1
+                            ],
+                            "TYPE": "CVI_BOOL"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "CurrentLV",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "s16CurrentLV",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                -32768,
+                                32767
+                            ],
+                            "TYPE": "CVI_S16"
+                        },
+                        {
+                            "ACCESS": "RW",
                             "ALIAS": "FrameCnt",
                             "COMMENT": "",
                             "FORMAT": "",
                             "ID": "u32FrameCnt",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "ExpTime",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u32ExpTime",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "ISO",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u32ISO",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "IspDgain",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u32IspDgain",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Again",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u32Again",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Dgain",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u32Dgain",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "AvgLum",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u8AvgLum",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "WDRExpRatio",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "u32WDRExpRatio",
                             "LEVEL": 0,
                             "RANGE": [
                                 0,
@@ -33913,6 +34842,16 @@
                             "ID": "pstAfStat",
                             "LEVEL": 0,
                             "TYPE": "ISP_AF_STATISTICS_S"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "AfLumaSts",
+                            "COMMENT": "",
+                            "COUNT": 2,
+                            "FORMAT": "",
+                            "ID": "stAfLumaSts",
+                            "LEVEL": 0,
+                            "TYPE": "ISP_AWB_STAT_RESULT_S"
                         }
                     ]
                 },
@@ -33996,6 +34935,234 @@
                             "ID": "stAwbLib",
                             "LEVEL": 0,
                             "TYPE": "ALG_LIB_S"
+                        }
+                    ]
+                },
+                {
+                    "ALIAS": "ISP_AF_ZOOM_FOCUS_TAB",
+                    "COMMENT": "Defines ISP_AF_ZOOM_FOCUS_TAB",
+                    "ID": "ISP_AF_ZOOM_FOCUS_TAB",
+                    "MEMBER": [
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Zoom_pos",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "zoom_pos",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Focus_pos_min",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "focus_pos_min",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Focus_pos_max",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "focus_pos_max",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        }
+                    ]
+                },
+                {
+                    "ALIAS": "ISP_AF_LEN_INFO_S",
+                    "COMMENT": "Defines ISP_AF_LEN_INFO_S",
+                    "ID": "ISP_AF_LEN_INFO_S",
+                    "MEMBER": [
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Zoom_focus_table",
+                            "COMMENT": "",
+                            "COUNT": 9,
+                            "FORMAT": "",
+                            "ID": "zoom_focus_table",
+                            "LEVEL": 0,
+                            "TYPE": "ISP_AF_ZOOM_FOCUS_TAB"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Focus_range",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "focus_range",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Zoom_range",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "zoom_range",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Focus_offset",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "focus_offset",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Zoom_offset",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "zoom_offset",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Focus_backlash",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "focus_backlash",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Zoom_backlash",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "zoom_backlash",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Focus_max_speed",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "focus_max_speed",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Zoom_max_speed",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "zoom_max_speed",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Focus_time_cost_one_step",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "focus_time_cost_one_step",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Zoom_time_cost_one_step",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "zoom_time_cost_one_step",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Focus_max_step",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "focus_max_step",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Zoom_max_step",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "zoom_max_step",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Motor_type",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "motor_type",
+                            "LEVEL": 0,
+                            "TYPE": "AF_MOTOR_TYPE"
                         }
                     ]
                 },
@@ -34137,6 +35304,113 @@
                             "ID": "ViPipe",
                             "LEVEL": 0,
                             "TYPE": "VI_PIPE"
+                        }
+                    ]
+                },
+                {
+                    "ALIAS": "ISP_AF_MOTOR_FUNC_S",
+                    "COMMENT": "Defines ISP_AF_MOTOR_FUNC_S",
+                    "ID": "ISP_AF_MOTOR_FUNC_S",
+                    "MEMBER": [
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Step",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "step",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                255
+                            ],
+                            "TYPE": "CVI_U8"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Step",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "step",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                255
+                            ],
+                            "TYPE": "CVI_U8"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Speed",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "speed",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                255
+                            ],
+                            "TYPE": "CVI_U8"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Step",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "step",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                255
+                            ],
+                            "TYPE": "CVI_U8"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Step",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "step",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                255
+                            ],
+                            "TYPE": "CVI_U8"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Speed",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "speed",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                255
+                            ],
+                            "TYPE": "CVI_U8"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "FocusStep",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "focusStep",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                255
+                            ],
+                            "TYPE": "CVI_U8"
+                        },
+                        {
+                            "ACCESS": "RW",
+                            "ALIAS": "Info",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "info",
+                            "LEVEL": 0,
+                            "TYPE": "ISP_AF_LEN_INFO_S"
                         }
                     ]
                 },
@@ -34769,7 +36043,7 @@
                     "ID": "ISP_CMOS_SENSOR_IMAGE_MODE_S",
                     "MEMBER": [
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Width",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -34782,7 +36056,7 @@
                             "TYPE": "CVI_U16"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Height",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -34795,7 +36069,7 @@
                             "TYPE": "CVI_U16"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Fps",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -34804,7 +36078,7 @@
                             "TYPE": "CVI_FLOAT"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "SnsMode",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -34817,7 +36091,7 @@
                             "TYPE": "CVI_U8"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "LaneNum",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -34830,7 +36104,7 @@
                             "TYPE": "CVI_U8"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "EnableMaster",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -34850,7 +36124,7 @@
                     "ID": "ISP_CMOS_BLACK_LEVEL_S",
                     "MEMBER": [
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Update",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -34863,7 +36137,7 @@
                             "TYPE": "CVI_BOOL"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "BlcAttr",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -34879,7 +36153,7 @@
                     "ID": "ISP_SNS_ATTR_INFO_S",
                     "MEMBER": [
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "ESensorId",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -34899,7 +36173,7 @@
                     "ID": "ISP_CMOS_NOISE_CALIBRATION_S",
                     "MEMBER": [
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "CalibrationCoef",
                             "COMMENT": "",
                             "COUNT": [
@@ -34924,7 +36198,7 @@
                     "ID": "ISP_CMOS_DEFAULT_S",
                     "MEMBER": [
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "NoiseCalibration",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -34940,7 +36214,7 @@
                     "ID": "ISP_SENSOR_EXP_FUNC_S",
                     "MEMBER": [
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "ViPipe",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -34949,7 +36223,7 @@
                             "TYPE": "VI_PIPE"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "ViPipe",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -34958,7 +36232,7 @@
                             "TYPE": "VI_PIPE"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "ViPipe",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -34967,7 +36241,7 @@
                             "TYPE": "VI_PIPE"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "PstSensorImageMode",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -34976,7 +36250,7 @@
                             "TYPE": "ISP_CMOS_SENSOR_IMAGE_MODE_S"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Mode",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -34989,7 +36263,7 @@
                             "TYPE": "CVI_U8"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "PstDef",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -34998,7 +36272,7 @@
                             "TYPE": "ISP_CMOS_DEFAULT_S"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "PstBlackLevel",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -35007,7 +36281,7 @@
                             "TYPE": "ISP_CMOS_BLACK_LEVEL_S"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "PstSnsRegsInfo",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -35027,34 +36301,34 @@
                     ]
                 },
                 {
-                    "ALIAS": "ISP_SENSOR_REGISTER_S",
-                    "COMMENT": "Defines ISP_SENSOR_REGISTER_S",
-                    "ID": "ISP_SENSOR_REGISTER_S",
-                    "MEMBER": [
-                        {
-                            "ACCESS": "RW",
-                            "ALIAS": "SnsExp",
-                            "COMMENT": "",
-                            "FORMAT": "",
-                            "ID": "stSnsExp",
-                            "LEVEL": 0,
-                            "TYPE": "ISP_SENSOR_EXP_FUNC_S"
-                        }
-                    ]
-                },
-                {
                     "ALIAS": "SNS_MCLK_S",
                     "COMMENT": "Defines SNS_MCLK_S",
                     "ID": "SNS_MCLK_S",
                     "MEMBER": [
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Freq",
                             "COMMENT": "",
                             "FORMAT": "",
                             "ID": "enFreq",
                             "LEVEL": 0,
                             "TYPE": "MCLK_FREQ_E"
+                        }
+                    ]
+                },
+                {
+                    "ALIAS": "ISP_SENSOR_REGISTER_S",
+                    "COMMENT": "Defines ISP_SENSOR_REGISTER_S",
+                    "ID": "ISP_SENSOR_REGISTER_S",
+                    "MEMBER": [
+                        {
+                            "ACCESS": "",
+                            "ALIAS": "SnsExp",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "stSnsExp",
+                            "LEVEL": 0,
+                            "TYPE": "ISP_SENSOR_EXP_FUNC_S"
                         }
                     ]
                 },
@@ -35118,7 +36392,7 @@
                     "ID": "VI_USERPIC_BGC_S",
                     "MEMBER": [
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "BgColor",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -36120,7 +37394,7 @@
                             "TYPE": "OPERATION_MODE_E"
                         },
                         {
-                            "ACCESS": "",
+                            "ACCESS": "RW",
                             "ALIAS": "LumaWgt",
                             "COMMENT": "",
                             "COUNT": 32,
@@ -36159,7 +37433,7 @@
                     "ID": "NRX_PARAM_MANUAL_V1_S",
                     "MEMBER": [
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "NRXParamV1",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -36175,7 +37449,7 @@
                     "ID": "NRX_PARAM_AUTO_V1_S",
                     "MEMBER": [
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "ParamNum",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -36188,7 +37462,7 @@
                             "TYPE": "CVI_U32"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Pau32ISO",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -36197,7 +37471,7 @@
                             "TYPE": "ATTRIBUTE"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "PastNRXParamV1",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -36247,7 +37521,7 @@
                     "ID": "NRX_PARAM_MANUAL_V2_S",
                     "MEMBER": [
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "NRXParamV2",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -36263,7 +37537,7 @@
                     "ID": "NRX_PARAM_AUTO_V2_S",
                     "MEMBER": [
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "ParamNum",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -36276,7 +37550,7 @@
                             "TYPE": "CVI_U32"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Pau32ISO",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -36285,7 +37559,7 @@
                             "TYPE": "ATTRIBUTE"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "PastNRXParamV2",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -36860,37 +38134,12 @@
                     ]
                 },
                 {
-                    "ALIAS": "VI_RAW_INFO_S",
-                    "COMMENT": "Defines VI_RAW_INFO_S",
-                    "ID": "VI_RAW_INFO_S",
-                    "MEMBER": [
-                        {
-                            "ACCESS": "RW",
-                            "ALIAS": "VideoFrame",
-                            "COMMENT": "",
-                            "FORMAT": "",
-                            "ID": "stVideoFrame",
-                            "LEVEL": 0,
-                            "TYPE": "VIDEO_FRAME_INFO_S"
-                        },
-                        {
-                            "ACCESS": "RW",
-                            "ALIAS": "IspInfo",
-                            "COMMENT": "",
-                            "FORMAT": "",
-                            "ID": "stIspInfo",
-                            "LEVEL": 0,
-                            "TYPE": "ISP_CONFIG_INFO_S"
-                        }
-                    ]
-                },
-                {
                     "ALIAS": "VI_MOD_PARAM_S",
                     "COMMENT": "Defines VI_MOD_PARAM_S",
                     "ID": "VI_MOD_PARAM_S",
                     "MEMBER": [
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "DetectErrFrame",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -36903,7 +38152,7 @@
                             "TYPE": "CVI_S32"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "DropErrFrame",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -36956,7 +38205,7 @@
                     "ID": "VI_EARLY_INTERRUPT_S",
                     "MEMBER": [
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Enable",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -36969,7 +38218,7 @@
                             "TYPE": "CVI_BOOL"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "LineCnt",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -36989,7 +38238,7 @@
                     "ID": "MLSC_GAIN_LUT_S",
                     "MEMBER": [
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "RGain",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -37002,7 +38251,7 @@
                             "TYPE": "CVI_U16"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "GGain",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -37015,7 +38264,7 @@
                             "TYPE": "CVI_U16"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "BGain",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -37051,7 +38300,7 @@
                     "ID": "VI_PM_OPS_S",
                     "MEMBER": [
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "PfnSnsSuspend",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -37060,7 +38309,7 @@
                             "TYPE": "pfnViDevPmOps"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "PfnSnsResume",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -37069,7 +38318,7 @@
                             "TYPE": "pfnViDevPmOps"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "PfnMipiSuspend",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -37078,7 +38327,7 @@
                             "TYPE": "pfnViDevPmOps"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "PfnMipiResume",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -37094,7 +38343,7 @@
                     "ID": "VI_SMOOTH_RAW_DUMP_INFO_S",
                     "MEMBER": [
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "ViPipe",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -37103,7 +38352,7 @@
                             "TYPE": "VI_PIPE"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Phy_addr_list",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -37690,7 +38939,7 @@
                     "ID": "BORDER_S",
                     "MEMBER": [
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "TopWidth",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -37703,7 +38952,7 @@
                             "TYPE": "CVI_U32"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "BottomWidth",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -37716,7 +38965,7 @@
                             "TYPE": "CVI_U32"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "LeftWidth",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -37729,7 +38978,7 @@
                             "TYPE": "CVI_U32"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "RightWidth",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -37742,7 +38991,7 @@
                             "TYPE": "CVI_U32"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Color",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -37762,7 +39011,7 @@
                     "ID": "POINT_S",
                     "MEMBER": [
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "X",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -37775,7 +39024,7 @@
                             "TYPE": "CVI_S32"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Y",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -37795,7 +39044,7 @@
                     "ID": "SIZE_S",
                     "MEMBER": [
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Width",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -37808,7 +39057,7 @@
                             "TYPE": "CVI_U32"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Height",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -37828,7 +39077,7 @@
                     "ID": "RECT_S",
                     "MEMBER": [
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "X",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -37841,7 +39090,7 @@
                             "TYPE": "CVI_S32"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Y",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -37854,7 +39103,7 @@
                             "TYPE": "CVI_S32"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Width",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -37867,7 +39116,7 @@
                             "TYPE": "CVI_U32"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Height",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -37916,7 +39165,7 @@
                     "ID": "CROP_INFO_S",
                     "MEMBER": [
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Enable",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -37929,7 +39178,7 @@
                             "TYPE": "CVI_BOOL"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Rect",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -38188,101 +39437,12 @@
                     ]
                 },
                 {
-                    "ALIAS": "ISP_HDR_INFO_S",
-                    "COMMENT": "Defines ISP_HDR_INFO_S",
-                    "ID": "ISP_HDR_INFO_S",
-                    "MEMBER": [
-                        {
-                            "ACCESS": "RW",
-                            "ALIAS": "ColorTemp",
-                            "COMMENT": "",
-                            "FORMAT": "",
-                            "ID": "u32ColorTemp",
-                            "LEVEL": 0,
-                            "RANGE": [
-                                0,
-                                4294967295
-                            ],
-                            "TYPE": "CVI_U32"
-                        },
-                        {
-                            "ACCESS": "RW",
-                            "ALIAS": "CCM",
-                            "COMMENT": "",
-                            "COUNT": 9,
-                            "FORMAT": "",
-                            "ID": "au16CCM",
-                            "LEVEL": 0,
-                            "RANGE": [
-                                0,
-                                65535
-                            ],
-                            "TYPE": "CVI_U16"
-                        },
-                        {
-                            "ACCESS": "RW",
-                            "ALIAS": "Saturation",
-                            "COMMENT": "",
-                            "FORMAT": "",
-                            "ID": "u8Saturation",
-                            "LEVEL": 0,
-                            "RANGE": [
-                                0,
-                                255
-                            ],
-                            "TYPE": "CVI_U8"
-                        }
-                    ]
-                },
-                {
-                    "ALIAS": "ISP_ATTACH_INFO_S",
-                    "COMMENT": "Defines ISP_ATTACH_INFO_S",
-                    "ID": "ISP_ATTACH_INFO_S",
-                    "MEMBER": [
-                        {
-                            "ACCESS": "RW",
-                            "ALIAS": "IspHdr",
-                            "COMMENT": "",
-                            "FORMAT": "",
-                            "ID": "stIspHdr",
-                            "LEVEL": 0,
-                            "TYPE": "ISP_HDR_INFO_S"
-                        },
-                        {
-                            "ACCESS": "RW",
-                            "ALIAS": "ISO",
-                            "COMMENT": "",
-                            "FORMAT": "",
-                            "ID": "u32ISO",
-                            "LEVEL": 0,
-                            "RANGE": [
-                                0,
-                                4294967295
-                            ],
-                            "TYPE": "CVI_U32"
-                        },
-                        {
-                            "ACCESS": "RW",
-                            "ALIAS": "SnsWDRMode",
-                            "COMMENT": "",
-                            "FORMAT": "",
-                            "ID": "u8SnsWDRMode",
-                            "LEVEL": 0,
-                            "RANGE": [
-                                0,
-                                255
-                            ],
-                            "TYPE": "CVI_U8"
-                        }
-                    ]
-                },
-                {
                     "ALIAS": "ISP_CONFIG_INFO_S",
                     "COMMENT": "Defines ISP_CONFIG_INFO_S",
                     "ID": "ISP_CONFIG_INFO_S",
                     "MEMBER": [
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "ISO",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -38295,7 +39455,7 @@
                             "TYPE": "CVI_U32"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "IspDgain",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -38308,7 +39468,7 @@
                             "TYPE": "CVI_U32"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "ExposureTime",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -38321,7 +39481,7 @@
                             "TYPE": "CVI_U32"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "WhiteBalanceGain",
                             "COMMENT": "",
                             "COUNT": 4,
@@ -38335,7 +39495,7 @@
                             "TYPE": "CVI_U32"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "ColorTemperature",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -38348,7 +39508,7 @@
                             "TYPE": "CVI_U32"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "CapCCM",
                             "COMMENT": "",
                             "COUNT": 9,
@@ -38360,101 +39520,6 @@
                                 65535
                             ],
                             "TYPE": "CVI_U16"
-                        }
-                    ]
-                },
-                {
-                    "ALIAS": "VIDEO_SUPPLEMENT_S",
-                    "COMMENT": "Defines VIDEO_SUPPLEMENT_S",
-                    "ID": "VIDEO_SUPPLEMENT_S",
-                    "MEMBER": [
-                        {
-                            "ACCESS": "RW",
-                            "ALIAS": "JpegDCFPhyAddr",
-                            "COMMENT": "",
-                            "FORMAT": "",
-                            "ID": "u64JpegDCFPhyAddr",
-                            "LEVEL": 0,
-                            "RANGE": [
-                                0,
-                                18446744073709552000
-                            ],
-                            "TYPE": "CVI_U64"
-                        },
-                        {
-                            "ACCESS": "RW",
-                            "ALIAS": "IspInfoPhyAddr",
-                            "COMMENT": "",
-                            "FORMAT": "",
-                            "ID": "u64IspInfoPhyAddr",
-                            "LEVEL": 0,
-                            "RANGE": [
-                                0,
-                                18446744073709552000
-                            ],
-                            "TYPE": "CVI_U64"
-                        },
-                        {
-                            "ACCESS": "RW",
-                            "ALIAS": "LowDelayPhyAddr",
-                            "COMMENT": "",
-                            "FORMAT": "",
-                            "ID": "u64LowDelayPhyAddr",
-                            "LEVEL": 0,
-                            "RANGE": [
-                                0,
-                                18446744073709552000
-                            ],
-                            "TYPE": "CVI_U64"
-                        },
-                        {
-                            "ACCESS": "RW",
-                            "ALIAS": "FrameDNGPhyAddr",
-                            "COMMENT": "",
-                            "FORMAT": "",
-                            "ID": "u64FrameDNGPhyAddr",
-                            "LEVEL": 0,
-                            "RANGE": [
-                                0,
-                                18446744073709552000
-                            ],
-                            "TYPE": "CVI_U64"
-                        },
-                        {
-                            "ACCESS": "RW",
-                            "ALIAS": "PJpegDCFVirAddr",
-                            "COMMENT": "",
-                            "FORMAT": "",
-                            "ID": "pJpegDCFVirAddr",
-                            "LEVEL": 0,
-                            "TYPE": "ATTRIBUTE"
-                        },
-                        {
-                            "ACCESS": "RW",
-                            "ALIAS": "PIspInfoVirAddr",
-                            "COMMENT": "",
-                            "FORMAT": "",
-                            "ID": "pIspInfoVirAddr",
-                            "LEVEL": 0,
-                            "TYPE": "ATTRIBUTE"
-                        },
-                        {
-                            "ACCESS": "RW",
-                            "ALIAS": "PLowDelayVirAddr",
-                            "COMMENT": "",
-                            "FORMAT": "",
-                            "ID": "pLowDelayVirAddr",
-                            "LEVEL": 0,
-                            "TYPE": "ATTRIBUTE"
-                        },
-                        {
-                            "ACCESS": "RW",
-                            "ALIAS": "PFrameDNGVirAddr",
-                            "COMMENT": "",
-                            "FORMAT": "",
-                            "ID": "pFrameDNGVirAddr",
-                            "LEVEL": 0,
-                            "TYPE": "ATTRIBUTE"
                         }
                     ]
                 },
@@ -38721,7 +39786,7 @@
                     "ID": "GRID_INFO_ATTR_S",
                     "MEMBER": [
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Enable",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -38734,7 +39799,7 @@
                             "TYPE": "CVI_BOOL"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "GridFileName",
                             "COMMENT": "",
                             "COUNT": 128,
@@ -38744,7 +39809,7 @@
                             "TYPE": "char"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "GridBindName",
                             "COMMENT": "",
                             "COUNT": 128,
@@ -38754,7 +39819,7 @@
                             "TYPE": "char"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Grid_in",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -38763,7 +39828,7 @@
                             "TYPE": "SIZE_S"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Grid_out",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -38772,7 +39837,7 @@
                             "TYPE": "SIZE_S"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "IsBlending",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -38798,13 +39863,35 @@
                             "TYPE": "CVI_BOOL"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "HomoRgnNum",
                             "COMMENT": "",
                             "FORMAT": "",
                             "ID": "homoRgnNum",
                             "LEVEL": 0,
                             "TYPE": "uint8_t"
+                        },
+                        {
+                            "ACCESS": "",
+                            "ALIAS": "PBuf",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "pBuf",
+                            "LEVEL": 0,
+                            "TYPE": "CVI_VOID"
+                        },
+                        {
+                            "ACCESS": "",
+                            "ALIAS": "Len",
+                            "COMMENT": "",
+                            "FORMAT": "",
+                            "ID": "Len",
+                            "LEVEL": 0,
+                            "RANGE": [
+                                0,
+                                4294967295
+                            ],
+                            "TYPE": "CVI_U32"
                         }
                     ]
                 },
@@ -38905,7 +39992,7 @@
                             "TYPE": "CVI_S32"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "GridInfoAttr",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -38914,7 +40001,7 @@
                             "TYPE": "GRID_INFO_ATTR_S"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Rotation",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -38930,7 +40017,7 @@
                     "ID": "PROC_AMP_CTRL_S",
                     "MEMBER": [
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Minimum",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -38943,7 +40030,7 @@
                             "TYPE": "CVI_S32"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Maximum",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -38956,7 +40043,7 @@
                             "TYPE": "CVI_S32"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Step",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -38969,7 +40056,7 @@
                             "TYPE": "CVI_S32"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Default_value",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -38980,65 +40067,6 @@
                                 2147483647
                             ],
                             "TYPE": "CVI_S32"
-                        }
-                    ]
-                },
-                {
-                    "ALIAS": "VCODEC_PERF_FPS_S",
-                    "COMMENT": "Defines VCODEC_PERF_FPS_S",
-                    "ID": "VCODEC_PERF_FPS_S",
-                    "MEMBER": [
-                        {
-                            "ACCESS": "RW",
-                            "ALIAS": "InFPS",
-                            "COMMENT": "",
-                            "FORMAT": "",
-                            "ID": "u32InFPS",
-                            "LEVEL": 0,
-                            "RANGE": [
-                                0,
-                                4294967295
-                            ],
-                            "TYPE": "CVI_U32"
-                        },
-                        {
-                            "ACCESS": "RW",
-                            "ALIAS": "OutFPS",
-                            "COMMENT": "",
-                            "FORMAT": "",
-                            "ID": "u32OutFPS",
-                            "LEVEL": 0,
-                            "RANGE": [
-                                0,
-                                4294967295
-                            ],
-                            "TYPE": "CVI_U32"
-                        },
-                        {
-                            "ACCESS": "RW",
-                            "ALIAS": "HwTime",
-                            "COMMENT": "",
-                            "FORMAT": "",
-                            "ID": "u64HwTime",
-                            "LEVEL": 0,
-                            "RANGE": [
-                                0,
-                                18446744073709552000
-                            ],
-                            "TYPE": "CVI_U64"
-                        },
-                        {
-                            "ACCESS": "RW",
-                            "ALIAS": "MaxHwTime",
-                            "COMMENT": "",
-                            "FORMAT": "",
-                            "ID": "u64MaxHwTime",
-                            "LEVEL": 0,
-                            "RANGE": [
-                                0,
-                                18446744073709552000
-                            ],
-                            "TYPE": "CVI_U64"
                         }
                     ]
                 },
@@ -39237,7 +40265,7 @@
                     "ID": "VO_D_REMAP",
                     "MEMBER": [
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Sel",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -39246,7 +40274,7 @@
                             "TYPE": "VO_MAC_D_SEL_E"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Mux",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -39262,7 +40290,7 @@
                     "ID": "VO_BT_ATTR_S",
                     "MEMBER": [
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Pin_num",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -39275,7 +40303,7 @@
                             "TYPE": "CVI_U8"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Bt_clk_inv",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -39288,7 +40316,7 @@
                             "TYPE": "CVI_BOOL"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Bt_vs_inv",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -39301,7 +40329,7 @@
                             "TYPE": "CVI_BOOL"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Bt_hs_inv",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -39314,7 +40342,7 @@
                             "TYPE": "CVI_BOOL"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Data_seq",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -39323,7 +40351,7 @@
                             "TYPE": "VO_BT_DATA_SEQ_E"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "D_pins",
                             "COMMENT": "",
                             "COUNT": 32,
@@ -39478,7 +40506,7 @@
                     "ID": "VO_HDMI_PARAM_S",
                     "MEMBER": [
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "HDMICSC",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -39805,7 +40833,7 @@
                     "ID": "VO_GAMMA_INFO_S",
                     "MEMBER": [
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "VoDev",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -39814,7 +40842,7 @@
                             "TYPE": "VO_DEV"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Enable",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -39827,7 +40855,7 @@
                             "TYPE": "CVI_BOOL"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "OSD Apply",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -39840,7 +40868,7 @@
                             "TYPE": "CVI_BOOL"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Table",
                             "COMMENT": "",
                             "COUNT": 65,
@@ -39861,7 +40889,7 @@
                     "ID": "VO_BIN_INFO_S",
                     "MEMBER": [
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Gamma_info",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -39870,7 +40898,7 @@
                             "TYPE": "VO_GAMMA_INFO_S"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "Guard_magic",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -39890,7 +40918,7 @@
                     "ID": "VO_PM_OPS_S",
                     "MEMBER": [
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "PfnPanelSuspend",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -39899,7 +40927,7 @@
                             "TYPE": "pfnVoDevPmOps"
                         },
                         {
-                            "ACCESS": "RW",
+                            "ACCESS": "",
                             "ALIAS": "PfnPanelResume",
                             "COMMENT": "",
                             "FORMAT": "",
@@ -39916,9 +40944,9 @@
         "CODE_NAME": "cv186x",
         "COMM_PROTOCOL": "1.0",
         "FULL_NAME": "cv186x",
-        "GENERATOR_VERSION": "(I43da8d,31ca1cb4)",
+        "GENERATOR_VERSION": "(Ibec0be,ad10b521)",
         "ISP_BRANCH": "master",
-        "ISP_VERSION": "(Ida48d6,8fbcb4ac)",
+        "ISP_VERSION": "(I3e7800,5374d4c0)",
         "PARAMETERS": {
             "PARAM": [
                 {
@@ -39936,7 +40964,7 @@
                 }
             ]
         },
-        "SDK_VERSION": "20250121"
+        "SDK_VERSION": "20250730"
     },
     "FUNCTIONS": {
         "FUNCTION": [
@@ -40423,6 +41451,7 @@
                                 "ISP_WB_ATTR_S.u8AWBRunInterval",
                                 "ISP_WB_ATTR_S.stAuto.enAlgType",
                                 "ISP_WB_ATTR_S.stAuto.u16ZoneSel",
+                                "ISP_WB_ATTR_S.enWdrStsMode",
                                 "ISP_WB_ATTR_S.u8DebugMode",
                                 "HEADER:Mannual Attr",
                                 "ISP_WB_ATTR_S.stManual.u16Rgain",
@@ -40446,8 +41475,8 @@
                                 "ISP_WB_ATTR_S.stAuto.bShiftLimitEn",
                                 "ISP_WB_ATTR_S.stAuto.bNaturalCastEn",
                                 "ISP_AWB_ATTR_EX_S.adjBgainMode",
-                                "ISP_WB_ATTR_S.stAuto.u8RGStrength",
-                                "ISP_WB_ATTR_S.stAuto.u8BGStrength",
+                                "ISP_AWB_ATTR_EX_S.u16TargetCT",
+                                "ISP_AWB_ATTR_EX_S.u8TargetStrength",
                                 "HEADER:Curve",
                                 "ISP_WB_ATTR_S.stAuto.u16HighColorTemp",
                                 "ISP_WB_ATTR_S.stAuto.u16LowColorTemp",
@@ -42151,6 +43180,55 @@
             {
                 "CONTENTS": {
                     "CONTENT": [
+                        "ISP_FOCUS_ATTR_S"
+                    ]
+                },
+                "ID": "Focus Attr",
+                "LAYOUTS": {
+                    "LAYOUT": [
+                        {
+                            "MEMBER": [
+                                "ISP_FOCUS_ATTR_S.bEnable",
+                                "ISP_FOCUS_ATTR_S.enOpType",
+                                "ISP_FOCUS_ATTR_S.u8RunInterval",
+                                "ISP_FOCUS_ATTR_S.bRealTimeFocus",
+                                "ISP_FOCUS_ATTR_S.bChasingFocus",
+                                "ISP_FOCUS_ATTR_S.bReFocus",
+                                "ISP_FOCUS_ATTR_S.bMixHlc",
+                                "ISP_FOCUS_ATTR_S.u8DebugMode",
+                                "ISP_FOCUS_ATTR_S.u8RtFocusStableFrm",
+                                "ISP_FOCUS_ATTR_S.u16RtMaxDiffFvRatio",
+                                "ISP_FOCUS_ATTR_S.u16MaxDiffFvRatio",
+                                "ISP_FOCUS_ATTR_S.u16MaxDiffLumaRatio",
+                                "ISP_FOCUS_ATTR_S.u16DetectDiffRatio",
+                                "ISP_FOCUS_ATTR_S.u16SearchDiffRatio",
+                                "ISP_FOCUS_ATTR_S.u16LocalDiffRatio",
+                                "ISP_FOCUS_ATTR_S.u8InitStep",
+                                "ISP_FOCUS_ATTR_S.u8FindStep",
+                                "ISP_FOCUS_ATTR_S.u8LocateStep",
+                                "ISP_FOCUS_ATTR_S.enInitDir",
+                                "ISP_FOCUS_ATTR_S.u16MaxRotateCnt",
+                                "ISP_FOCUS_ATTR_S.enChasingFocusMode"
+                            ],
+                            "TITLE": "Focus Attr"
+                        },
+                        {
+                            "MEMBER": [
+                                "ISP_FOCUS_ATTR_S.stManual.enOpType",
+                                "ISP_FOCUS_ATTR_S.stManual.enManualDir",
+                                "ISP_FOCUS_ATTR_S.stManual.u16ManualStep",
+                                "ISP_FOCUS_ATTR_S.stManual.u16ManualPos"
+                            ],
+                            "TITLE": "Manual Attr"
+                        }
+                    ]
+                },
+                "READY": true,
+                "TYPE": "REG_API_MPI"
+            },
+            {
+                "CONTENTS": {
+                    "CONTENT": [
                         "ISP_STATISTICS_CFG_S"
                     ]
                 },
@@ -42808,6 +43886,7 @@
                     "AE Route",
                     "IRIS",
                     "Exposure Info",
+                    "Focus Attr",
                     "BLC",
                     "LBLC",
                     "RGBIR",
@@ -43232,6 +44311,11 @@
                 "GET": "CVI_ISP_QueryWBInfo",
                 "SET": "",
                 "STRUCT": "ISP_WB_INFO_S"
+            },
+            {
+                "GET": "CVI_ISP_GetAFAttr",
+                "SET": "CVI_ISP_SetAFAttr",
+                "STRUCT": "ISP_FOCUS_ATTR_S"
             },
             {
                 "GET": "CVI_VI_GetChnLDCAttr",
@@ -83266,6 +84350,110 @@
             ]
         },
         {
+            "Focus Attr": [
+                {
+                    "PATH": "ISP_FOCUS_ATTR_S.bChasingFocus",
+                    "VALUE": 0
+                },
+                {
+                    "PATH": "ISP_FOCUS_ATTR_S.bEnable",
+                    "VALUE": 0
+                },
+                {
+                    "PATH": "ISP_FOCUS_ATTR_S.bMixHlc",
+                    "VALUE": 0
+                },
+                {
+                    "PATH": "ISP_FOCUS_ATTR_S.bReFocus",
+                    "VALUE": 0
+                },
+                {
+                    "PATH": "ISP_FOCUS_ATTR_S.bRealTimeFocus",
+                    "VALUE": 0
+                },
+                {
+                    "PATH": "ISP_FOCUS_ATTR_S.enChasingFocusMode",
+                    "VALUE": 0
+                },
+                {
+                    "PATH": "ISP_FOCUS_ATTR_S.enInitDir",
+                    "VALUE": 0
+                },
+                {
+                    "PATH": "ISP_FOCUS_ATTR_S.enOpType",
+                    "VALUE": 0
+                },
+                {
+                    "PATH": "ISP_FOCUS_ATTR_S.stManual.enManualDir",
+                    "VALUE": 0
+                },
+                {
+                    "PATH": "ISP_FOCUS_ATTR_S.stManual.enOpType",
+                    "VALUE": 0
+                },
+                {
+                    "PATH": "ISP_FOCUS_ATTR_S.stManual.u16ManualPos",
+                    "VALUE": 0
+                },
+                {
+                    "PATH": "ISP_FOCUS_ATTR_S.stManual.u16ManualStep",
+                    "VALUE": 0
+                },
+                {
+                    "PATH": "ISP_FOCUS_ATTR_S.u16DetectDiffRatio",
+                    "VALUE": 1024
+                },
+                {
+                    "PATH": "ISP_FOCUS_ATTR_S.u16LocalDiffRatio",
+                    "VALUE": 1024
+                },
+                {
+                    "PATH": "ISP_FOCUS_ATTR_S.u16MaxDiffFvRatio",
+                    "VALUE": 1024
+                },
+                {
+                    "PATH": "ISP_FOCUS_ATTR_S.u16MaxDiffLumaRatio",
+                    "VALUE": 1024
+                },
+                {
+                    "PATH": "ISP_FOCUS_ATTR_S.u16MaxRotateCnt",
+                    "VALUE": 1024
+                },
+                {
+                    "PATH": "ISP_FOCUS_ATTR_S.u16RtMaxDiffFvRatio",
+                    "VALUE": 1024
+                },
+                {
+                    "PATH": "ISP_FOCUS_ATTR_S.u16SearchDiffRatio",
+                    "VALUE": 1024
+                },
+                {
+                    "PATH": "ISP_FOCUS_ATTR_S.u8DebugMode",
+                    "VALUE": 0
+                },
+                {
+                    "PATH": "ISP_FOCUS_ATTR_S.u8FindStep",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_FOCUS_ATTR_S.u8InitStep",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_FOCUS_ATTR_S.u8LocateStep",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_FOCUS_ATTR_S.u8RtFocusStableFrm",
+                    "VALUE": 1
+                },
+                {
+                    "PATH": "ISP_FOCUS_ATTR_S.u8RunInterval",
+                    "VALUE": 1
+                }
+            ]
+        },
+        {
             "Gamma": [
                 {
                     "PATH": "ISP_AUTO_GAMMA_ATTR_S.GammaTabNum",
@@ -121555,6 +122743,266 @@
                     "VALUE": 0
                 },
                 {
+                    "PATH": "ISP_STATISTICS_CFG_S.stFocusCfg.au8Weight",
+                    "VALUE": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
                     "PATH": "ISP_STATISTICS_CFG_S.stFocusCfg.stConfig.H0FltCoring",
                     "VALUE": 0
                 },
@@ -122884,8 +124332,24 @@
                     "VALUE": 32
                 },
                 {
+                    "PATH": "ISP_AWB_ATTR_EX_S.u16TargetCT",
+                    "VALUE": [
+                        2800,
+                        4700,
+                        6500
+                    ]
+                },
+                {
                     "PATH": "ISP_AWB_ATTR_EX_S.u8FineTunStrength",
                     "VALUE": 128
+                },
+                {
+                    "PATH": "ISP_AWB_ATTR_EX_S.u8TargetStrength",
+                    "VALUE": [
+                        128,
+                        128,
+                        128
+                    ]
                 },
                 {
                     "PATH": "ISP_AWB_ATTR_EX_S.u8Tolerance",
@@ -122929,6 +124393,10 @@
                 },
                 {
                     "PATH": "ISP_WB_ATTR_S.enOpType",
+                    "VALUE": 0
+                },
+                {
+                    "PATH": "ISP_WB_ATTR_S.enWdrStsMode",
                     "VALUE": 0
                 },
                 {
@@ -124178,14 +125646,6 @@
                 {
                     "PATH": "ISP_WB_ATTR_S.stAuto.u16ZoneSel",
                     "VALUE": 32
-                },
-                {
-                    "PATH": "ISP_WB_ATTR_S.stAuto.u8BGStrength",
-                    "VALUE": 128
-                },
-                {
-                    "PATH": "ISP_WB_ATTR_S.stAuto.u8RGStrength",
-                    "VALUE": 128
                 },
                 {
                     "PATH": "ISP_WB_ATTR_S.stManual.u16Bgain",
