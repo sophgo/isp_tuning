@@ -13,11 +13,7 @@ SRCS := $(wildcard $(SDIR)/*.c)
 OBJS = $(patsubst $(SDIR)/%.c, $(TMP_FOLDER)/%.o, $(wildcard $(SDIR)/*.c))
 DEPS = $(patsubst $(SDIR)/%.c, $(TMP_FOLDER)/%.d, $(wildcard $(SDIR)/*.c))
 
-LOCAL_LDFLAGS = -L$(TOP_DIR)/cvi_mpi/lib -lisp -lae -lawb -laf
-
-ifeq ($(DUAL_OS), n)
-	 LOCAL_LDFLAGS += -lisp_algo
-endif
+LOCAL_LDFLAGS = -L$(TOP_DIR)/cvi_mpi/lib -lisp -lisp_algo -lae -lawb -laf
 LOCAL_LDFLAGS += -lvi -lsys -lm -static
 
 LOCAL_CFLAGS = -I$(TOP_DIR)/cvi_mpi/include -I$(TOP_DIR)/cvi_mpi/include/isp
